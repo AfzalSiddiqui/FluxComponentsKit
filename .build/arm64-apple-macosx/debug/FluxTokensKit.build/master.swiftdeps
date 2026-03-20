@@ -1,0 +1,11 @@
+version: "Apple Swift version 5.8.1 (swiftlang-5.8.0.124.5 clang-1403.0.22.11.100)"
+options: "ef70bb3f8ed4aa5f651376210c31e106349bb8329d2749d6dbefb4cdeebbdcb7"
+build_start_time: [1773998919, 207941000]
+build_end_time: [1773998924, 337952000]
+inputs:
+  "/Users/mac/Desktop/GithubProject/FluxDesignComponent/FluxTokensKit/Sources/FluxTokensKit/FluxTokensKit.swift": [1773998778, 815527601]
+  "/Users/mac/Desktop/GithubProject/FluxDesignComponent/FluxTokensKit/Sources/FluxTokensKit/Tokens/FluxColors.swift": [1773998887, 481431202]
+  "/Users/mac/Desktop/GithubProject/FluxDesignComponent/FluxTokensKit/Sources/FluxTokensKit/Tokens/FluxRadius.swift": [1773998773, 943167099]
+  "/Users/mac/Desktop/GithubProject/FluxDesignComponent/FluxTokensKit/Sources/FluxTokensKit/Tokens/FluxShadow.swift": [1773998891, 27097842]
+  "/Users/mac/Desktop/GithubProject/FluxDesignComponent/FluxTokensKit/Sources/FluxTokensKit/Tokens/FluxSpacing.swift": [1773998772, 707785578]
+  "/Users/mac/Desktop/GithubProject/FluxDesignComponent/FluxTokensKit/Sources/FluxTokensKit/Tokens/FluxTypography.swift": [1773998770, 354563598]

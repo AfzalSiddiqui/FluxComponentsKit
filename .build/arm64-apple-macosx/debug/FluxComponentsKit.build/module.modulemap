@@ -1,0 +1,4 @@
+module FluxComponentsKit {
+    header "/Users/mac/Desktop/GithubProject/FluxDesignComponent/FluxComponentsKit/.build/arm64-apple-macosx/debug/FluxComponentsKit.build/FluxComponentsKit-Swift.h"
+    requires objc
+}

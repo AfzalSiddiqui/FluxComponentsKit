@@ -1,0 +1,11 @@
+{
+  "": {
+    "swift-dependencies": "/Users/mac/Desktop/GithubProject/FluxDesignComponent/FluxComponentsKit/.build/arm64-apple-macosx/debug/FluxComponentsKit.build/master.swiftdeps"
+  },
+  "/Users/mac/Desktop/GithubProject/FluxDesignComponent/FluxComponentsKit/Sources/FluxComponentsKit/FluxComponentsKit.swift": {
+    "dependencies": "/Users/mac/Desktop/GithubProject/FluxDesignComponent/FluxComponentsKit/.build/arm64-apple-macosx/debug/FluxComponentsKit.build/FluxComponentsKit.d",
+    "object": "/Users/mac/Desktop/GithubProject/FluxDesignComponent/FluxComponentsKit/.build/arm64-apple-macosx/debug/FluxComponentsKit.build/FluxComponentsKit.swift.o",
+    "swiftmodule": "/Users/mac/Desktop/GithubProject/FluxDesignComponent/FluxComponentsKit/.build/arm64-apple-macosx/debug/FluxComponentsKit.build/FluxComponentsKit~partial.swiftmodule",
+    "swift-dependencies": "/Users/mac/Desktop/GithubProject/FluxDesignComponent/FluxComponentsKit/.build/arm64-apple-macosx/debug/FluxComponentsKit.build/FluxComponentsKit.swiftdeps"
+  }
+}
