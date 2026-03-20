@@ -1,3 +1,4 @@
 // FluxComponentsKit — Reusable UI components built on FluxTokensKit
 
-import FluxTokensKit
+@_exported import FluxTokensKit
+import SwiftUI

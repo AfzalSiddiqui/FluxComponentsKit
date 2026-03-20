@@ -2,10 +2,70 @@
   "": {
     "swift-dependencies": "/Users/mac/Desktop/GithubProject/FluxDesignComponent/FluxComponentsKit/.build/arm64-apple-macosx/debug/FluxComponentsKit.build/master.swiftdeps"
   },
+  "/Users/mac/Desktop/GithubProject/FluxDesignComponent/FluxComponentsKit/Sources/FluxComponentsKit/Atoms/FluxButton.swift": {
+    "dependencies": "/Users/mac/Desktop/GithubProject/FluxDesignComponent/FluxComponentsKit/.build/arm64-apple-macosx/debug/FluxComponentsKit.build/Atoms/FluxButton.d",
+    "object": "/Users/mac/Desktop/GithubProject/FluxDesignComponent/FluxComponentsKit/.build/arm64-apple-macosx/debug/FluxComponentsKit.build/Atoms/FluxButton.swift.o",
+    "swiftmodule": "/Users/mac/Desktop/GithubProject/FluxDesignComponent/FluxComponentsKit/.build/arm64-apple-macosx/debug/FluxComponentsKit.build/Atoms/FluxButton~partial.swiftmodule",
+    "swift-dependencies": "/Users/mac/Desktop/GithubProject/FluxDesignComponent/FluxComponentsKit/.build/arm64-apple-macosx/debug/FluxComponentsKit.build/Atoms/FluxButton.swiftdeps"
+  },
+  "/Users/mac/Desktop/GithubProject/FluxDesignComponent/FluxComponentsKit/Sources/FluxComponentsKit/Atoms/FluxDivider.swift": {
+    "dependencies": "/Users/mac/Desktop/GithubProject/FluxDesignComponent/FluxComponentsKit/.build/arm64-apple-macosx/debug/FluxComponentsKit.build/Atoms/FluxDivider.d",
+    "object": "/Users/mac/Desktop/GithubProject/FluxDesignComponent/FluxComponentsKit/.build/arm64-apple-macosx/debug/FluxComponentsKit.build/Atoms/FluxDivider.swift.o",
+    "swiftmodule": "/Users/mac/Desktop/GithubProject/FluxDesignComponent/FluxComponentsKit/.build/arm64-apple-macosx/debug/FluxComponentsKit.build/Atoms/FluxDivider~partial.swiftmodule",
+    "swift-dependencies": "/Users/mac/Desktop/GithubProject/FluxDesignComponent/FluxComponentsKit/.build/arm64-apple-macosx/debug/FluxComponentsKit.build/Atoms/FluxDivider.swiftdeps"
+  },
+  "/Users/mac/Desktop/GithubProject/FluxDesignComponent/FluxComponentsKit/Sources/FluxComponentsKit/Atoms/FluxIcon.swift": {
+    "dependencies": "/Users/mac/Desktop/GithubProject/FluxDesignComponent/FluxComponentsKit/.build/arm64-apple-macosx/debug/FluxComponentsKit.build/Atoms/FluxIcon.d",
+    "object": "/Users/mac/Desktop/GithubProject/FluxDesignComponent/FluxComponentsKit/.build/arm64-apple-macosx/debug/FluxComponentsKit.build/Atoms/FluxIcon.swift.o",
+    "swiftmodule": "/Users/mac/Desktop/GithubProject/FluxDesignComponent/FluxComponentsKit/.build/arm64-apple-macosx/debug/FluxComponentsKit.build/Atoms/FluxIcon~partial.swiftmodule",
+    "swift-dependencies": "/Users/mac/Desktop/GithubProject/FluxDesignComponent/FluxComponentsKit/.build/arm64-apple-macosx/debug/FluxComponentsKit.build/Atoms/FluxIcon.swiftdeps"
+  },
+  "/Users/mac/Desktop/GithubProject/FluxDesignComponent/FluxComponentsKit/Sources/FluxComponentsKit/Atoms/FluxLoader.swift": {
+    "dependencies": "/Users/mac/Desktop/GithubProject/FluxDesignComponent/FluxComponentsKit/.build/arm64-apple-macosx/debug/FluxComponentsKit.build/Atoms/FluxLoader.d",
+    "object": "/Users/mac/Desktop/GithubProject/FluxDesignComponent/FluxComponentsKit/.build/arm64-apple-macosx/debug/FluxComponentsKit.build/Atoms/FluxLoader.swift.o",
+    "swiftmodule": "/Users/mac/Desktop/GithubProject/FluxDesignComponent/FluxComponentsKit/.build/arm64-apple-macosx/debug/FluxComponentsKit.build/Atoms/FluxLoader~partial.swiftmodule",
+    "swift-dependencies": "/Users/mac/Desktop/GithubProject/FluxDesignComponent/FluxComponentsKit/.build/arm64-apple-macosx/debug/FluxComponentsKit.build/Atoms/FluxLoader.swiftdeps"
+  },
+  "/Users/mac/Desktop/GithubProject/FluxDesignComponent/FluxComponentsKit/Sources/FluxComponentsKit/Atoms/FluxText.swift": {
+    "dependencies": "/Users/mac/Desktop/GithubProject/FluxDesignComponent/FluxComponentsKit/.build/arm64-apple-macosx/debug/FluxComponentsKit.build/Atoms/FluxText.d",
+    "object": "/Users/mac/Desktop/GithubProject/FluxDesignComponent/FluxComponentsKit/.build/arm64-apple-macosx/debug/FluxComponentsKit.build/Atoms/FluxText.swift.o",
+    "swiftmodule": "/Users/mac/Desktop/GithubProject/FluxDesignComponent/FluxComponentsKit/.build/arm64-apple-macosx/debug/FluxComponentsKit.build/Atoms/FluxText~partial.swiftmodule",
+    "swift-dependencies": "/Users/mac/Desktop/GithubProject/FluxDesignComponent/FluxComponentsKit/.build/arm64-apple-macosx/debug/FluxComponentsKit.build/Atoms/FluxText.swiftdeps"
+  },
   "/Users/mac/Desktop/GithubProject/FluxDesignComponent/FluxComponentsKit/Sources/FluxComponentsKit/FluxComponentsKit.swift": {
     "dependencies": "/Users/mac/Desktop/GithubProject/FluxDesignComponent/FluxComponentsKit/.build/arm64-apple-macosx/debug/FluxComponentsKit.build/FluxComponentsKit.d",
     "object": "/Users/mac/Desktop/GithubProject/FluxDesignComponent/FluxComponentsKit/.build/arm64-apple-macosx/debug/FluxComponentsKit.build/FluxComponentsKit.swift.o",
     "swiftmodule": "/Users/mac/Desktop/GithubProject/FluxDesignComponent/FluxComponentsKit/.build/arm64-apple-macosx/debug/FluxComponentsKit.build/FluxComponentsKit~partial.swiftmodule",
     "swift-dependencies": "/Users/mac/Desktop/GithubProject/FluxDesignComponent/FluxComponentsKit/.build/arm64-apple-macosx/debug/FluxComponentsKit.build/FluxComponentsKit.swiftdeps"
+  },
+  "/Users/mac/Desktop/GithubProject/FluxDesignComponent/FluxComponentsKit/Sources/FluxComponentsKit/Molecules/FluxCard.swift": {
+    "dependencies": "/Users/mac/Desktop/GithubProject/FluxDesignComponent/FluxComponentsKit/.build/arm64-apple-macosx/debug/FluxComponentsKit.build/Molecules/FluxCard.d",
+    "object": "/Users/mac/Desktop/GithubProject/FluxDesignComponent/FluxComponentsKit/.build/arm64-apple-macosx/debug/FluxComponentsKit.build/Molecules/FluxCard.swift.o",
+    "swiftmodule": "/Users/mac/Desktop/GithubProject/FluxDesignComponent/FluxComponentsKit/.build/arm64-apple-macosx/debug/FluxComponentsKit.build/Molecules/FluxCard~partial.swiftmodule",
+    "swift-dependencies": "/Users/mac/Desktop/GithubProject/FluxDesignComponent/FluxComponentsKit/.build/arm64-apple-macosx/debug/FluxComponentsKit.build/Molecules/FluxCard.swiftdeps"
+  },
+  "/Users/mac/Desktop/GithubProject/FluxDesignComponent/FluxComponentsKit/Sources/FluxComponentsKit/Molecules/FluxListRow.swift": {
+    "dependencies": "/Users/mac/Desktop/GithubProject/FluxDesignComponent/FluxComponentsKit/.build/arm64-apple-macosx/debug/FluxComponentsKit.build/Molecules/FluxListRow.d",
+    "object": "/Users/mac/Desktop/GithubProject/FluxDesignComponent/FluxComponentsKit/.build/arm64-apple-macosx/debug/FluxComponentsKit.build/Molecules/FluxListRow.swift.o",
+    "swiftmodule": "/Users/mac/Desktop/GithubProject/FluxDesignComponent/FluxComponentsKit/.build/arm64-apple-macosx/debug/FluxComponentsKit.build/Molecules/FluxListRow~partial.swiftmodule",
+    "swift-dependencies": "/Users/mac/Desktop/GithubProject/FluxDesignComponent/FluxComponentsKit/.build/arm64-apple-macosx/debug/FluxComponentsKit.build/Molecules/FluxListRow.swiftdeps"
+  },
+  "/Users/mac/Desktop/GithubProject/FluxDesignComponent/FluxComponentsKit/Sources/FluxComponentsKit/Molecules/FluxTextField.swift": {
+    "dependencies": "/Users/mac/Desktop/GithubProject/FluxDesignComponent/FluxComponentsKit/.build/arm64-apple-macosx/debug/FluxComponentsKit.build/Molecules/FluxTextField.d",
+    "object": "/Users/mac/Desktop/GithubProject/FluxDesignComponent/FluxComponentsKit/.build/arm64-apple-macosx/debug/FluxComponentsKit.build/Molecules/FluxTextField.swift.o",
+    "swiftmodule": "/Users/mac/Desktop/GithubProject/FluxDesignComponent/FluxComponentsKit/.build/arm64-apple-macosx/debug/FluxComponentsKit.build/Molecules/FluxTextField~partial.swiftmodule",
+    "swift-dependencies": "/Users/mac/Desktop/GithubProject/FluxDesignComponent/FluxComponentsKit/.build/arm64-apple-macosx/debug/FluxComponentsKit.build/Molecules/FluxTextField.swiftdeps"
+  },
+  "/Users/mac/Desktop/GithubProject/FluxDesignComponent/FluxComponentsKit/Sources/FluxComponentsKit/Organisms/FluxFormSection.swift": {
+    "dependencies": "/Users/mac/Desktop/GithubProject/FluxDesignComponent/FluxComponentsKit/.build/arm64-apple-macosx/debug/FluxComponentsKit.build/Organisms/FluxFormSection.d",
+    "object": "/Users/mac/Desktop/GithubProject/FluxDesignComponent/FluxComponentsKit/.build/arm64-apple-macosx/debug/FluxComponentsKit.build/Organisms/FluxFormSection.swift.o",
+    "swiftmodule": "/Users/mac/Desktop/GithubProject/FluxDesignComponent/FluxComponentsKit/.build/arm64-apple-macosx/debug/FluxComponentsKit.build/Organisms/FluxFormSection~partial.swiftmodule",
+    "swift-dependencies": "/Users/mac/Desktop/GithubProject/FluxDesignComponent/FluxComponentsKit/.build/arm64-apple-macosx/debug/FluxComponentsKit.build/Organisms/FluxFormSection.swiftdeps"
+  },
+  "/Users/mac/Desktop/GithubProject/FluxDesignComponent/FluxComponentsKit/Sources/FluxComponentsKit/Organisms/FluxHeader.swift": {
+    "dependencies": "/Users/mac/Desktop/GithubProject/FluxDesignComponent/FluxComponentsKit/.build/arm64-apple-macosx/debug/FluxComponentsKit.build/Organisms/FluxHeader.d",
+    "object": "/Users/mac/Desktop/GithubProject/FluxDesignComponent/FluxComponentsKit/.build/arm64-apple-macosx/debug/FluxComponentsKit.build/Organisms/FluxHeader.swift.o",
+    "swiftmodule": "/Users/mac/Desktop/GithubProject/FluxDesignComponent/FluxComponentsKit/.build/arm64-apple-macosx/debug/FluxComponentsKit.build/Organisms/FluxHeader~partial.swiftmodule",
+    "swift-dependencies": "/Users/mac/Desktop/GithubProject/FluxDesignComponent/FluxComponentsKit/.build/arm64-apple-macosx/debug/FluxComponentsKit.build/Organisms/FluxHeader.swiftdeps"
   }
 }
