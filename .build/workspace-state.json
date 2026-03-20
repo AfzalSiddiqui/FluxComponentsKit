@@ -1,0 +1,24 @@
+{
+  "object" : {
+    "artifacts" : [
+
+    ],
+    "dependencies" : [
+      {
+        "basedOn" : null,
+        "packageRef" : {
+          "identity" : "fluxtokenskit",
+          "kind" : "fileSystem",
+          "location" : "/Users/mac/Desktop/GithubProject/FluxDesignComponent/FluxTokensKit",
+          "name" : "FluxTokensKit"
+        },
+        "state" : {
+          "name" : "fileSystem",
+          "path" : "/Users/mac/Desktop/GithubProject/FluxDesignComponent/FluxTokensKit"
+        },
+        "subpath" : "fluxtokenskit"
+      }
+    ]
+  },
+  "version" : 6
+}

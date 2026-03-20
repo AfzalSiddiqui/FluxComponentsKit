@@ -1,0 +1,41 @@
+{
+  "": {
+    "swift-dependencies": "/Users/mac/Desktop/GithubProject/FluxDesignComponent/FluxComponentsKit/.build/arm64-apple-macosx/debug/FluxTokensKit.build/master.swiftdeps"
+  },
+  "/Users/mac/Desktop/GithubProject/FluxDesignComponent/FluxTokensKit/Sources/FluxTokensKit/FluxTokensKit.swift": {
+    "dependencies": "/Users/mac/Desktop/GithubProject/FluxDesignComponent/FluxComponentsKit/.build/arm64-apple-macosx/debug/FluxTokensKit.build/FluxTokensKit.d",
+    "object": "/Users/mac/Desktop/GithubProject/FluxDesignComponent/FluxComponentsKit/.build/arm64-apple-macosx/debug/FluxTokensKit.build/FluxTokensKit.swift.o",
+    "swiftmodule": "/Users/mac/Desktop/GithubProject/FluxDesignComponent/FluxComponentsKit/.build/arm64-apple-macosx/debug/FluxTokensKit.build/FluxTokensKit~partial.swiftmodule",
+    "swift-dependencies": "/Users/mac/Desktop/GithubProject/FluxDesignComponent/FluxComponentsKit/.build/arm64-apple-macosx/debug/FluxTokensKit.build/FluxTokensKit.swiftdeps"
+  },
+  "/Users/mac/Desktop/GithubProject/FluxDesignComponent/FluxTokensKit/Sources/FluxTokensKit/Tokens/FluxColors.swift": {
+    "dependencies": "/Users/mac/Desktop/GithubProject/FluxDesignComponent/FluxComponentsKit/.build/arm64-apple-macosx/debug/FluxTokensKit.build/Tokens/FluxColors.d",
+    "object": "/Users/mac/Desktop/GithubProject/FluxDesignComponent/FluxComponentsKit/.build/arm64-apple-macosx/debug/FluxTokensKit.build/Tokens/FluxColors.swift.o",
+    "swiftmodule": "/Users/mac/Desktop/GithubProject/FluxDesignComponent/FluxComponentsKit/.build/arm64-apple-macosx/debug/FluxTokensKit.build/Tokens/FluxColors~partial.swiftmodule",
+    "swift-dependencies": "/Users/mac/Desktop/GithubProject/FluxDesignComponent/FluxComponentsKit/.build/arm64-apple-macosx/debug/FluxTokensKit.build/Tokens/FluxColors.swiftdeps"
+  },
+  "/Users/mac/Desktop/GithubProject/FluxDesignComponent/FluxTokensKit/Sources/FluxTokensKit/Tokens/FluxRadius.swift": {
+    "dependencies": "/Users/mac/Desktop/GithubProject/FluxDesignComponent/FluxComponentsKit/.build/arm64-apple-macosx/debug/FluxTokensKit.build/Tokens/FluxRadius.d",
+    "object": "/Users/mac/Desktop/GithubProject/FluxDesignComponent/FluxComponentsKit/.build/arm64-apple-macosx/debug/FluxTokensKit.build/Tokens/FluxRadius.swift.o",
+    "swiftmodule": "/Users/mac/Desktop/GithubProject/FluxDesignComponent/FluxComponentsKit/.build/arm64-apple-macosx/debug/FluxTokensKit.build/Tokens/FluxRadius~partial.swiftmodule",
+    "swift-dependencies": "/Users/mac/Desktop/GithubProject/FluxDesignComponent/FluxComponentsKit/.build/arm64-apple-macosx/debug/FluxTokensKit.build/Tokens/FluxRadius.swiftdeps"
+  },
+  "/Users/mac/Desktop/GithubProject/FluxDesignComponent/FluxTokensKit/Sources/FluxTokensKit/Tokens/FluxShadow.swift": {
+    "dependencies": "/Users/mac/Desktop/GithubProject/FluxDesignComponent/FluxComponentsKit/.build/arm64-apple-macosx/debug/FluxTokensKit.build/Tokens/FluxShadow.d",
+    "object": "/Users/mac/Desktop/GithubProject/FluxDesignComponent/FluxComponentsKit/.build/arm64-apple-macosx/debug/FluxTokensKit.build/Tokens/FluxShadow.swift.o",
+    "swiftmodule": "/Users/mac/Desktop/GithubProject/FluxDesignComponent/FluxComponentsKit/.build/arm64-apple-macosx/debug/FluxTokensKit.build/Tokens/FluxShadow~partial.swiftmodule",
+    "swift-dependencies": "/Users/mac/Desktop/GithubProject/FluxDesignComponent/FluxComponentsKit/.build/arm64-apple-macosx/debug/FluxTokensKit.build/Tokens/FluxShadow.swiftdeps"
+  },
+  "/Users/mac/Desktop/GithubProject/FluxDesignComponent/FluxTokensKit/Sources/FluxTokensKit/Tokens/FluxSpacing.swift": {
+    "dependencies": "/Users/mac/Desktop/GithubProject/FluxDesignComponent/FluxComponentsKit/.build/arm64-apple-macosx/debug/FluxTokensKit.build/Tokens/FluxSpacing.d",
+    "object": "/Users/mac/Desktop/GithubProject/FluxDesignComponent/FluxComponentsKit/.build/arm64-apple-macosx/debug/FluxTokensKit.build/Tokens/FluxSpacing.swift.o",
+    "swiftmodule": "/Users/mac/Desktop/GithubProject/FluxDesignComponent/FluxComponentsKit/.build/arm64-apple-macosx/debug/FluxTokensKit.build/Tokens/FluxSpacing~partial.swiftmodule",
+    "swift-dependencies": "/Users/mac/Desktop/GithubProject/FluxDesignComponent/FluxComponentsKit/.build/arm64-apple-macosx/debug/FluxTokensKit.build/Tokens/FluxSpacing.swiftdeps"
+  },
+  "/Users/mac/Desktop/GithubProject/FluxDesignComponent/FluxTokensKit/Sources/FluxTokensKit/Tokens/FluxTypography.swift": {
+    "dependencies": "/Users/mac/Desktop/GithubProject/FluxDesignComponent/FluxComponentsKit/.build/arm64-apple-macosx/debug/FluxTokensKit.build/Tokens/FluxTypography.d",
+    "object": "/Users/mac/Desktop/GithubProject/FluxDesignComponent/FluxComponentsKit/.build/arm64-apple-macosx/debug/FluxTokensKit.build/Tokens/FluxTypography.swift.o",
+    "swiftmodule": "/Users/mac/Desktop/GithubProject/FluxDesignComponent/FluxComponentsKit/.build/arm64-apple-macosx/debug/FluxTokensKit.build/Tokens/FluxTypography~partial.swiftmodule",
+    "swift-dependencies": "/Users/mac/Desktop/GithubProject/FluxDesignComponent/FluxComponentsKit/.build/arm64-apple-macosx/debug/FluxTokensKit.build/Tokens/FluxTypography.swiftdeps"
+  }
+}

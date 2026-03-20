@@ -1,0 +1,4 @@
+module FluxTokensKit {
+    header "/Users/mac/Desktop/GithubProject/FluxDesignComponent/FluxComponentsKit/.build/arm64-apple-macosx/debug/FluxTokensKit.build/FluxTokensKit-Swift.h"
+    requires objc
+}
