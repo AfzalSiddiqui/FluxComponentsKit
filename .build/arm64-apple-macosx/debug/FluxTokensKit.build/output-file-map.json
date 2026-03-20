@@ -32,6 +32,18 @@
     "swiftmodule": "/Users/mac/Desktop/GithubProject/FluxDesignComponent/FluxComponentsKit/.build/arm64-apple-macosx/debug/FluxTokensKit.build/Tokens/FluxSpacing~partial.swiftmodule",
     "swift-dependencies": "/Users/mac/Desktop/GithubProject/FluxDesignComponent/FluxComponentsKit/.build/arm64-apple-macosx/debug/FluxTokensKit.build/Tokens/FluxSpacing.swiftdeps"
   },
+  "/Users/mac/Desktop/GithubProject/FluxDesignComponent/FluxTokensKit/Sources/FluxTokensKit/Tokens/FluxTheme.swift": {
+    "dependencies": "/Users/mac/Desktop/GithubProject/FluxDesignComponent/FluxComponentsKit/.build/arm64-apple-macosx/debug/FluxTokensKit.build/Tokens/FluxTheme.d",
+    "object": "/Users/mac/Desktop/GithubProject/FluxDesignComponent/FluxComponentsKit/.build/arm64-apple-macosx/debug/FluxTokensKit.build/Tokens/FluxTheme.swift.o",
+    "swiftmodule": "/Users/mac/Desktop/GithubProject/FluxDesignComponent/FluxComponentsKit/.build/arm64-apple-macosx/debug/FluxTokensKit.build/Tokens/FluxTheme~partial.swiftmodule",
+    "swift-dependencies": "/Users/mac/Desktop/GithubProject/FluxDesignComponent/FluxComponentsKit/.build/arm64-apple-macosx/debug/FluxTokensKit.build/Tokens/FluxTheme.swiftdeps"
+  },
+  "/Users/mac/Desktop/GithubProject/FluxDesignComponent/FluxTokensKit/Sources/FluxTokensKit/Tokens/FluxThemeManager.swift": {
+    "dependencies": "/Users/mac/Desktop/GithubProject/FluxDesignComponent/FluxComponentsKit/.build/arm64-apple-macosx/debug/FluxTokensKit.build/Tokens/FluxThemeManager.d",
+    "object": "/Users/mac/Desktop/GithubProject/FluxDesignComponent/FluxComponentsKit/.build/arm64-apple-macosx/debug/FluxTokensKit.build/Tokens/FluxThemeManager.swift.o",
+    "swiftmodule": "/Users/mac/Desktop/GithubProject/FluxDesignComponent/FluxComponentsKit/.build/arm64-apple-macosx/debug/FluxTokensKit.build/Tokens/FluxThemeManager~partial.swiftmodule",
+    "swift-dependencies": "/Users/mac/Desktop/GithubProject/FluxDesignComponent/FluxComponentsKit/.build/arm64-apple-macosx/debug/FluxTokensKit.build/Tokens/FluxThemeManager.swiftdeps"
+  },
   "/Users/mac/Desktop/GithubProject/FluxDesignComponent/FluxTokensKit/Sources/FluxTokensKit/Tokens/FluxTypography.swift": {
     "dependencies": "/Users/mac/Desktop/GithubProject/FluxDesignComponent/FluxComponentsKit/.build/arm64-apple-macosx/debug/FluxTokensKit.build/Tokens/FluxTypography.d",
     "object": "/Users/mac/Desktop/GithubProject/FluxDesignComponent/FluxComponentsKit/.build/arm64-apple-macosx/debug/FluxTokensKit.build/Tokens/FluxTypography.swift.o",

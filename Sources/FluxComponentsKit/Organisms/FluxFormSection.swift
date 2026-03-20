@@ -1,31 +1,46 @@
 import SwiftUI
 import FluxTokensKit
 
-public struct FluxFormSection<Content: View>: View {
+// MARK: - ViewModel
 
-    private let title: String?
-    private let spacing: CGFloat
-    private let content: Content
+@MainActor
+public class FluxFormSectionViewModel: ObservableObject {
+    @Published public var title: String?
+    @Published public var spacing: CGFloat
 
     public init(
         title: String? = nil,
-        spacing: CGFloat = FluxSpacing.sm,
-        @ViewBuilder content: () -> Content
+        spacing: CGFloat = FluxSpacing.sm
     ) {
         self.title = title
         self.spacing = spacing
+    }
+}
+
+// MARK: - View
+
+public struct FluxFormSection<Content: View>: View {
+
+    @ObservedObject public var viewModel: FluxFormSectionViewModel
+    private let content: Content
+
+    public init(
+        viewModel: FluxFormSectionViewModel,
+        @ViewBuilder content: () -> Content
+    ) {
+        self.viewModel = viewModel
         self.content = content()
     }
 
     public var body: some View {
         VStack(alignment: .leading, spacing: FluxSpacing.xs) {
-            if let title {
+            if let title = viewModel.title {
                 Text(title)
                     .font(FluxFont.headline)
                     .foregroundStyle(FluxColors.textPrimary)
                     .padding(.bottom, FluxSpacing.xs)
             }
-            VStack(spacing: spacing) {
+            VStack(spacing: viewModel.spacing) {
                 content
             }
         }

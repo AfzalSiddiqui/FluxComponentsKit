@@ -1,21 +1,36 @@
 import SwiftUI
 import FluxTokensKit
 
+// MARK: - ViewModel
+
+@MainActor
+public class FluxHeaderViewModel: ObservableObject {
+    @Published public var title: String
+    @Published public var subtitle: String?
+
+    public init(
+        title: String,
+        subtitle: String? = nil
+    ) {
+        self.title = title
+        self.subtitle = subtitle
+    }
+}
+
+// MARK: - View
+
 public struct FluxHeader<LeadingAction: View, TrailingAction: View>: View {
 
-    private let title: String
-    private let subtitle: String?
+    @ObservedObject public var viewModel: FluxHeaderViewModel
     private let leadingAction: LeadingAction
     private let trailingAction: TrailingAction
 
     public init(
-        title: String,
-        subtitle: String? = nil,
+        viewModel: FluxHeaderViewModel,
         @ViewBuilder leadingAction: () -> LeadingAction = { EmptyView() },
         @ViewBuilder trailingAction: () -> TrailingAction = { EmptyView() }
     ) {
-        self.title = title
-        self.subtitle = subtitle
+        self.viewModel = viewModel
         self.leadingAction = leadingAction()
         self.trailingAction = trailingAction()
     }
@@ -25,10 +40,10 @@ public struct FluxHeader<LeadingAction: View, TrailingAction: View>: View {
             leadingAction
 
             VStack(spacing: FluxSpacing.xxxs) {
-                Text(title)
+                Text(viewModel.title)
                     .font(FluxFont.title2)
                     .foregroundStyle(FluxColors.textPrimary)
-                if let subtitle {
+                if let subtitle = viewModel.subtitle {
                     Text(subtitle)
                         .font(FluxFont.subheadline)
                         .foregroundStyle(FluxColors.textSecondary)

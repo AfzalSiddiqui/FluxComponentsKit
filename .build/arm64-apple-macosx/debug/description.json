@@ -208,6 +208,14 @@
         },
         {
           "kind" : "file",
+          "name" : "/Users/mac/Desktop/GithubProject/FluxDesignComponent/FluxTokensKit/Sources/FluxTokensKit/Tokens/FluxTheme.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/mac/Desktop/GithubProject/FluxDesignComponent/FluxTokensKit/Sources/FluxTokensKit/Tokens/FluxThemeManager.swift"
+        },
+        {
+          "kind" : "file",
           "name" : "/Users/mac/Desktop/GithubProject/FluxDesignComponent/FluxTokensKit/Sources/FluxTokensKit/Tokens/FluxTypography.swift"
         }
       ],
@@ -220,6 +228,8 @@
         "/Users/mac/Desktop/GithubProject/FluxDesignComponent/FluxComponentsKit/.build/arm64-apple-macosx/debug/FluxTokensKit.build/Tokens/FluxRadius.swift.o",
         "/Users/mac/Desktop/GithubProject/FluxDesignComponent/FluxComponentsKit/.build/arm64-apple-macosx/debug/FluxTokensKit.build/Tokens/FluxShadow.swift.o",
         "/Users/mac/Desktop/GithubProject/FluxDesignComponent/FluxComponentsKit/.build/arm64-apple-macosx/debug/FluxTokensKit.build/Tokens/FluxSpacing.swift.o",
+        "/Users/mac/Desktop/GithubProject/FluxDesignComponent/FluxComponentsKit/.build/arm64-apple-macosx/debug/FluxTokensKit.build/Tokens/FluxTheme.swift.o",
+        "/Users/mac/Desktop/GithubProject/FluxDesignComponent/FluxComponentsKit/.build/arm64-apple-macosx/debug/FluxTokensKit.build/Tokens/FluxThemeManager.swift.o",
         "/Users/mac/Desktop/GithubProject/FluxDesignComponent/FluxComponentsKit/.build/arm64-apple-macosx/debug/FluxTokensKit.build/Tokens/FluxTypography.swift.o"
       ],
       "otherArguments" : [
@@ -275,6 +285,14 @@
         },
         {
           "kind" : "file",
+          "name" : "/Users/mac/Desktop/GithubProject/FluxDesignComponent/FluxComponentsKit/.build/arm64-apple-macosx/debug/FluxTokensKit.build/Tokens/FluxTheme.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/mac/Desktop/GithubProject/FluxDesignComponent/FluxComponentsKit/.build/arm64-apple-macosx/debug/FluxTokensKit.build/Tokens/FluxThemeManager.swift.o"
+        },
+        {
+          "kind" : "file",
           "name" : "/Users/mac/Desktop/GithubProject/FluxDesignComponent/FluxComponentsKit/.build/arm64-apple-macosx/debug/FluxTokensKit.build/Tokens/FluxTypography.swift.o"
         },
         {
@@ -288,6 +306,8 @@
         "/Users/mac/Desktop/GithubProject/FluxDesignComponent/FluxTokensKit/Sources/FluxTokensKit/Tokens/FluxRadius.swift",
         "/Users/mac/Desktop/GithubProject/FluxDesignComponent/FluxTokensKit/Sources/FluxTokensKit/Tokens/FluxShadow.swift",
         "/Users/mac/Desktop/GithubProject/FluxDesignComponent/FluxTokensKit/Sources/FluxTokensKit/Tokens/FluxSpacing.swift",
+        "/Users/mac/Desktop/GithubProject/FluxDesignComponent/FluxTokensKit/Sources/FluxTokensKit/Tokens/FluxTheme.swift",
+        "/Users/mac/Desktop/GithubProject/FluxDesignComponent/FluxTokensKit/Sources/FluxTokensKit/Tokens/FluxThemeManager.swift",
         "/Users/mac/Desktop/GithubProject/FluxDesignComponent/FluxTokensKit/Sources/FluxTokensKit/Tokens/FluxTypography.swift"
       ],
       "tempsPath" : "/Users/mac/Desktop/GithubProject/FluxDesignComponent/FluxComponentsKit/.build/arm64-apple-macosx/debug/FluxTokensKit.build",
@@ -359,6 +379,8 @@
       "/Users/mac/Desktop/GithubProject/FluxDesignComponent/FluxTokensKit/Sources/FluxTokensKit/Tokens/FluxRadius.swift",
       "/Users/mac/Desktop/GithubProject/FluxDesignComponent/FluxTokensKit/Sources/FluxTokensKit/Tokens/FluxShadow.swift",
       "/Users/mac/Desktop/GithubProject/FluxDesignComponent/FluxTokensKit/Sources/FluxTokensKit/Tokens/FluxSpacing.swift",
+      "/Users/mac/Desktop/GithubProject/FluxDesignComponent/FluxTokensKit/Sources/FluxTokensKit/Tokens/FluxTheme.swift",
+      "/Users/mac/Desktop/GithubProject/FluxDesignComponent/FluxTokensKit/Sources/FluxTokensKit/Tokens/FluxThemeManager.swift",
       "/Users/mac/Desktop/GithubProject/FluxDesignComponent/FluxTokensKit/Sources/FluxTokensKit/Tokens/FluxTypography.swift",
       "-I",
       "/Users/mac/Desktop/GithubProject/FluxDesignComponent/FluxComponentsKit/.build/arm64-apple-macosx/debug",

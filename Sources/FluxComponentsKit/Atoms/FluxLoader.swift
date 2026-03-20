@@ -1,6 +1,24 @@
 import SwiftUI
 import FluxTokensKit
 
+// MARK: - ViewModel
+
+@MainActor
+public class FluxLoaderViewModel: ObservableObject {
+    @Published public var size: FluxLoader.Size
+    @Published public var tint: Color
+
+    public init(
+        size: FluxLoader.Size = .medium,
+        tint: Color = FluxColors.primary
+    ) {
+        self.size = size
+        self.tint = tint
+    }
+}
+
+// MARK: - View
+
 public struct FluxLoader: View {
 
     public enum Size {
@@ -25,22 +43,17 @@ public struct FluxLoader: View {
         }
     }
 
-    private let size: Size
-    private let tintColor: Color
+    @ObservedObject public var viewModel: FluxLoaderViewModel
 
-    public init(
-        size: Size = .medium,
-        tint: Color = FluxColors.primary
-    ) {
-        self.size = size
-        self.tintColor = tint
+    public init(viewModel: FluxLoaderViewModel) {
+        self.viewModel = viewModel
     }
 
     public var body: some View {
         ProgressView()
-            .controlSize(size.controlSize)
-            .scaleEffect(size.scale)
-            .tint(tintColor)
+            .controlSize(viewModel.size.controlSize)
+            .scaleEffect(viewModel.size.scale)
+            .tint(viewModel.tint)
             .accessibilityLabel("Loading")
     }
 }

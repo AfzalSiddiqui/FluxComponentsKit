@@ -1,41 +1,54 @@
 import SwiftUI
 import FluxTokensKit
 
-public struct FluxTextField: View {
+// MARK: - ViewModel
 
-    private let label: String
-    private let placeholder: String
-    @Binding private var text: String
-    private let errorMessage: String?
-    private let isSecure: Bool
+@MainActor
+public class FluxTextFieldViewModel: ObservableObject {
+    @Published public var label: String
+    @Published public var placeholder: String
+    @Published public var text: String
+    @Published public var errorMessage: String?
+    @Published public var isSecure: Bool
 
     public init(
         label: String,
         placeholder: String = "",
-        text: Binding<String>,
+        text: String = "",
         errorMessage: String? = nil,
         isSecure: Bool = false
     ) {
         self.label = label
         self.placeholder = placeholder
-        self._text = text
+        self.text = text
         self.errorMessage = errorMessage
         self.isSecure = isSecure
+    }
+}
+
+// MARK: - View
+
+public struct FluxTextField: View {
+
+    @ObservedObject public var viewModel: FluxTextFieldViewModel
+
+    public init(viewModel: FluxTextFieldViewModel) {
+        self.viewModel = viewModel
     }
 
     @FocusState private var isFocused: Bool
 
     public var body: some View {
         VStack(alignment: .leading, spacing: FluxSpacing.xs) {
-            Text(label)
+            Text(viewModel.label)
                 .font(FluxFont.caption)
                 .foregroundStyle(FluxColors.textSecondary)
 
             Group {
-                if isSecure {
-                    SecureField(placeholder, text: $text)
+                if viewModel.isSecure {
+                    SecureField(viewModel.placeholder, text: $viewModel.text)
                 } else {
-                    TextField(placeholder, text: $text)
+                    TextField(viewModel.placeholder, text: $viewModel.text)
                 }
             }
             .font(FluxFont.body)
@@ -50,7 +63,7 @@ public struct FluxTextField: View {
             )
             .focused($isFocused)
 
-            if let errorMessage, !errorMessage.isEmpty {
+            if let errorMessage = viewModel.errorMessage, !errorMessage.isEmpty {
                 Text(errorMessage)
                     .font(FluxFont.caption)
                     .foregroundStyle(FluxColors.error)
@@ -60,7 +73,7 @@ public struct FluxTextField: View {
     }
 
     private var borderColor: Color {
-        if let errorMessage, !errorMessage.isEmpty {
+        if let errorMessage = viewModel.errorMessage, !errorMessage.isEmpty {
             return FluxColors.error
         }
         return isFocused ? FluxColors.primary : FluxColors.border

@@ -1,14 +1,16 @@
 import SwiftUI
 import FluxTokensKit
 
-public struct FluxListRow: View {
+// MARK: - ViewModel
 
-    private let icon: String?
-    private let iconColor: Color
-    private let title: String
-    private let subtitle: String?
-    private let showChevron: Bool
-    private let action: (() -> Void)?
+@MainActor
+public class FluxListRowViewModel: ObservableObject {
+    @Published public var icon: String?
+    @Published public var iconColor: Color
+    @Published public var title: String
+    @Published public var subtitle: String?
+    @Published public var showChevron: Bool
+    public var action: (() -> Void)?
 
     public init(
         icon: String? = nil,
@@ -25,18 +27,29 @@ public struct FluxListRow: View {
         self.showChevron = showChevron
         self.action = action
     }
+}
+
+// MARK: - View
+
+public struct FluxListRow: View {
+
+    @ObservedObject public var viewModel: FluxListRowViewModel
+
+    public init(viewModel: FluxListRowViewModel) {
+        self.viewModel = viewModel
+    }
 
     public var body: some View {
         let content = HStack(spacing: FluxSpacing.sm) {
-            if let icon {
-                FluxIcon(icon, size: .medium, color: iconColor)
+            if let icon = viewModel.icon {
+                FluxIcon(viewModel: FluxIconViewModel(systemName: icon, size: .medium, color: viewModel.iconColor))
             }
 
             VStack(alignment: .leading, spacing: FluxSpacing.xxxs) {
-                Text(title)
+                Text(viewModel.title)
                     .font(FluxFont.body)
                     .foregroundStyle(FluxColors.textPrimary)
-                if let subtitle {
+                if let subtitle = viewModel.subtitle {
                     Text(subtitle)
                         .font(FluxFont.caption)
                         .foregroundStyle(FluxColors.textSecondary)
@@ -45,16 +58,16 @@ public struct FluxListRow: View {
 
             Spacer(minLength: 0)
 
-            if showChevron {
-                FluxIcon("chevron.right", size: .small, color: FluxColors.textSecondary)
+            if viewModel.showChevron {
+                FluxIcon(viewModel: FluxIconViewModel(systemName: "chevron.right", size: .small, color: FluxColors.textSecondary))
             }
         }
         .padding(.vertical, FluxSpacing.sm)
         .padding(.horizontal, FluxSpacing.md)
         .accessibilityElement(children: .combine)
-        .accessibilityAddTraits(action != nil ? .isButton : [])
+        .accessibilityAddTraits(viewModel.action != nil ? .isButton : [])
 
-        if let action {
+        if let action = viewModel.action {
             Button(action: action) { content }
                 .buttonStyle(.plain)
         } else {

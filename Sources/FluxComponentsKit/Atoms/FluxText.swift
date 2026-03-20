@@ -1,6 +1,27 @@
 import SwiftUI
 import FluxTokensKit
 
+// MARK: - ViewModel
+
+@MainActor
+public class FluxTextViewModel: ObservableObject {
+    @Published public var content: String
+    @Published public var style: FluxText.Style
+    @Published public var color: Color?
+
+    public init(
+        content: String,
+        style: FluxText.Style = .body,
+        color: Color? = nil
+    ) {
+        self.content = content
+        self.style = style
+        self.color = color
+    }
+}
+
+// MARK: - View
+
 public struct FluxText: View {
 
     public enum Style {
@@ -33,23 +54,15 @@ public struct FluxText: View {
         }
     }
 
-    private let content: String
-    private let style: Style
-    private let color: Color?
+    @ObservedObject public var viewModel: FluxTextViewModel
 
-    public init(
-        _ content: String,
-        style: Style = .body,
-        color: Color? = nil
-    ) {
-        self.content = content
-        self.style = style
-        self.color = color
+    public init(viewModel: FluxTextViewModel) {
+        self.viewModel = viewModel
     }
 
     public var body: some View {
-        Text(content)
-            .font(style.font)
-            .foregroundStyle(color ?? style.defaultColor)
+        Text(viewModel.content)
+            .font(viewModel.style.font)
+            .foregroundStyle(viewModel.color ?? viewModel.style.defaultColor)
     }
 }

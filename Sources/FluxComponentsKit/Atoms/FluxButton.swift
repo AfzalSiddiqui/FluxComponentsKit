@@ -1,6 +1,36 @@
 import SwiftUI
 import FluxTokensKit
 
+// MARK: - ViewModel
+
+@MainActor
+public class FluxButtonViewModel: ObservableObject {
+    @Published public var title: String
+    @Published public var variant: FluxButton.Variant
+    @Published public var size: FluxButton.Size
+    @Published public var isLoading: Bool
+    @Published public var isDisabled: Bool
+    public var action: () -> Void
+
+    public init(
+        title: String,
+        variant: FluxButton.Variant = .primary,
+        size: FluxButton.Size = .medium,
+        isLoading: Bool = false,
+        isDisabled: Bool = false,
+        action: @escaping () -> Void = {}
+    ) {
+        self.title = title
+        self.variant = variant
+        self.size = size
+        self.isLoading = isLoading
+        self.isDisabled = isDisabled
+        self.action = action
+    }
+}
+
+// MARK: - View
+
 public struct FluxButton: View {
 
     public enum Variant {
@@ -47,57 +77,43 @@ public struct FluxButton: View {
         }
     }
 
-    private let title: String
-    private let variant: Variant
-    private let size: Size
-    private let isLoading: Bool
-    private let action: () -> Void
+    @ObservedObject public var viewModel: FluxButtonViewModel
 
-    public init(
-        _ title: String,
-        variant: Variant = .primary,
-        size: Size = .medium,
-        isLoading: Bool = false,
-        action: @escaping () -> Void
-    ) {
-        self.title = title
-        self.variant = variant
-        self.size = size
-        self.isLoading = isLoading
-        self.action = action
+    public init(viewModel: FluxButtonViewModel) {
+        self.viewModel = viewModel
     }
 
     @Environment(\.isEnabled) private var isEnabled
 
     public var body: some View {
-        Button(action: action) {
+        Button(action: viewModel.action) {
             HStack(spacing: FluxSpacing.xs) {
-                if isLoading {
+                if viewModel.isLoading {
                     ProgressView()
                         .tint(foregroundColor)
                 }
-                Text(title)
-                    .font(size.font)
+                Text(viewModel.title)
+                    .font(viewModel.size.font)
             }
             .frame(maxWidth: .infinity)
-            .padding(.vertical, size.verticalPadding)
-            .padding(.horizontal, size.horizontalPadding)
+            .padding(.vertical, viewModel.size.verticalPadding)
+            .padding(.horizontal, viewModel.size.horizontalPadding)
             .foregroundStyle(foregroundColor)
             .background(backgroundColor)
-            .clipShape(RoundedRectangle(cornerRadius: size.cornerRadius))
+            .clipShape(RoundedRectangle(cornerRadius: viewModel.size.cornerRadius))
             .overlay(
-                RoundedRectangle(cornerRadius: size.cornerRadius)
-                    .stroke(borderColor, lineWidth: variant == .secondary ? 1.5 : 0)
+                RoundedRectangle(cornerRadius: viewModel.size.cornerRadius)
+                    .stroke(borderColor, lineWidth: viewModel.variant == .secondary ? 1.5 : 0)
             )
         }
-        .disabled(isLoading)
+        .disabled(viewModel.isLoading || viewModel.isDisabled)
         .opacity(isEnabled ? 1.0 : 0.5)
-        .accessibilityLabel(title)
+        .accessibilityLabel(viewModel.title)
         .accessibilityAddTraits(.isButton)
     }
 
     private var backgroundColor: Color {
-        switch variant {
+        switch viewModel.variant {
         case .primary: return FluxColors.primary
         case .secondary: return Color.clear
         case .destructive: return FluxColors.error
@@ -105,7 +121,7 @@ public struct FluxButton: View {
     }
 
     private var foregroundColor: Color {
-        switch variant {
+        switch viewModel.variant {
         case .primary: return .white
         case .secondary: return FluxColors.primary
         case .destructive: return .white
@@ -113,7 +129,7 @@ public struct FluxButton: View {
     }
 
     private var borderColor: Color {
-        switch variant {
+        switch viewModel.variant {
         case .primary: return Color.clear
         case .secondary: return FluxColors.primary
         case .destructive: return Color.clear

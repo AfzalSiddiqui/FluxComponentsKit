@@ -1,6 +1,27 @@
 import SwiftUI
 import FluxTokensKit
 
+// MARK: - ViewModel
+
+@MainActor
+public class FluxIconViewModel: ObservableObject {
+    @Published public var systemName: String
+    @Published public var size: FluxIcon.Size
+    @Published public var color: Color
+
+    public init(
+        systemName: String,
+        size: FluxIcon.Size = .medium,
+        color: Color = FluxColors.textPrimary
+    ) {
+        self.systemName = systemName
+        self.size = size
+        self.color = color
+    }
+}
+
+// MARK: - View
+
 public struct FluxIcon: View {
 
     public enum Size {
@@ -17,26 +38,18 @@ public struct FluxIcon: View {
         }
     }
 
-    private let systemName: String
-    private let size: Size
-    private let color: Color
+    @ObservedObject public var viewModel: FluxIconViewModel
 
-    public init(
-        _ systemName: String,
-        size: Size = .medium,
-        color: Color = FluxColors.textPrimary
-    ) {
-        self.systemName = systemName
-        self.size = size
-        self.color = color
+    public init(viewModel: FluxIconViewModel) {
+        self.viewModel = viewModel
     }
 
     public var body: some View {
-        Image(systemName: systemName)
+        Image(systemName: viewModel.systemName)
             .resizable()
             .scaledToFit()
-            .frame(width: size.points, height: size.points)
-            .foregroundStyle(color)
+            .frame(width: viewModel.size.points, height: viewModel.size.points)
+            .foregroundStyle(viewModel.color)
             .accessibilityHidden(true)
     }
 }
