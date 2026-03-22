@@ -4,12 +4,19 @@ import FluxTokensKit
 // MARK: - Option
 
 public struct FluxOption {
-    public let icon: String
+    public let icon: FluxIcon.Source
     public let label: String
     public let subtitle: String?
 
-    public init(icon: String, label: String, subtitle: String? = nil) {
+    public init(icon: FluxIcon.Source, label: String, subtitle: String? = nil) {
         self.icon = icon
+        self.label = label
+        self.subtitle = subtitle
+    }
+
+    /// Convenience: pass an SF Symbol name directly
+    public init(icon: String, label: String, subtitle: String? = nil) {
+        self.icon = .system(icon)
         self.label = label
         self.subtitle = subtitle
     }
@@ -67,7 +74,7 @@ public struct FluxOptionCard: View {
         } label: {
             HStack(spacing: FluxSpacing.sm) {
                 FluxIcon(
-                    option.icon,
+                    source: option.icon,
                     size: .large,
                     color: isSelected ? FluxColors.primary : FluxColors.textSecondary
                 )
@@ -84,11 +91,11 @@ public struct FluxOptionCard: View {
                 selectionIndicator(isSelected: isSelected)
             }
             .padding(FluxSpacing.md)
-            .background(isSelected ? FluxColors.primary.opacity(0.08) : FluxColors.surface)
+            .background(isSelected ? FluxColors.primary.opacity(FluxOpacity.subtle) : FluxColors.surface)
             .clipShape(RoundedRectangle(cornerRadius: FluxRadius.md))
             .overlay(
                 RoundedRectangle(cornerRadius: FluxRadius.md)
-                    .stroke(isSelected ? FluxColors.primary : FluxColors.border, lineWidth: isSelected ? 2 : 1)
+                    .stroke(isSelected ? FluxColors.primary : FluxColors.border, lineWidth: isSelected ? FluxBorder.thick : FluxBorder.thin)
             )
         }
         .buttonStyle(.plain)

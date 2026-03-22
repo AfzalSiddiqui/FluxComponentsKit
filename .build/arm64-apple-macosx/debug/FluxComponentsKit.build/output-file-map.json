@@ -50,6 +50,12 @@
     "swiftmodule": "/Users/mac/Desktop/GithubProject/FluxDesignComponent/FluxComponentsKit/.build/arm64-apple-macosx/debug/FluxComponentsKit.build/Atoms/FluxSegmentedControl~partial.swiftmodule",
     "swift-dependencies": "/Users/mac/Desktop/GithubProject/FluxDesignComponent/FluxComponentsKit/.build/arm64-apple-macosx/debug/FluxComponentsKit.build/Atoms/FluxSegmentedControl.swiftdeps"
   },
+  "/Users/mac/Desktop/GithubProject/FluxDesignComponent/FluxComponentsKit/Sources/FluxComponentsKit/Atoms/FluxShimmer.swift": {
+    "dependencies": "/Users/mac/Desktop/GithubProject/FluxDesignComponent/FluxComponentsKit/.build/arm64-apple-macosx/debug/FluxComponentsKit.build/Atoms/FluxShimmer.d",
+    "object": "/Users/mac/Desktop/GithubProject/FluxDesignComponent/FluxComponentsKit/.build/arm64-apple-macosx/debug/FluxComponentsKit.build/Atoms/FluxShimmer.swift.o",
+    "swiftmodule": "/Users/mac/Desktop/GithubProject/FluxDesignComponent/FluxComponentsKit/.build/arm64-apple-macosx/debug/FluxComponentsKit.build/Atoms/FluxShimmer~partial.swiftmodule",
+    "swift-dependencies": "/Users/mac/Desktop/GithubProject/FluxDesignComponent/FluxComponentsKit/.build/arm64-apple-macosx/debug/FluxComponentsKit.build/Atoms/FluxShimmer.swiftdeps"
+  },
   "/Users/mac/Desktop/GithubProject/FluxDesignComponent/FluxComponentsKit/Sources/FluxComponentsKit/Atoms/FluxText.swift": {
     "dependencies": "/Users/mac/Desktop/GithubProject/FluxDesignComponent/FluxComponentsKit/.build/arm64-apple-macosx/debug/FluxComponentsKit.build/Atoms/FluxText.d",
     "object": "/Users/mac/Desktop/GithubProject/FluxDesignComponent/FluxComponentsKit/.build/arm64-apple-macosx/debug/FluxComponentsKit.build/Atoms/FluxText.swift.o",

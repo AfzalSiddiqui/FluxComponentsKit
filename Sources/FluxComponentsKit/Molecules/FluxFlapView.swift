@@ -5,9 +5,9 @@ import FluxTokensKit
 
 public struct FluxFlapTab {
     public let title: String
-    public let icon: String?
+    public let icon: FluxIcon.Source?
 
-    public init(title: String, icon: String? = nil) {
+    public init(title: String, icon: FluxIcon.Source? = nil) {
         self.title = title
         self.icon = icon
     }
@@ -85,7 +85,7 @@ public struct FluxFlapView<Content: View>: View {
         } label: {
             HStack(spacing: FluxSpacing.xxs) {
                 if let icon = tab.icon {
-                    FluxIcon(icon, size: .custom(14), color: tabForeground(isSelected: isSelected))
+                    FluxIcon(source: icon, size: .custom(14), color: tabForeground(isSelected: isSelected))
                 }
                 FluxText(tab.title, style: .body, color: tabForeground(isSelected: isSelected))
             }
@@ -113,9 +113,9 @@ public struct FluxFlapView<Content: View>: View {
         case .underlined:
             return isSelected ? FluxColors.primary : FluxColors.textSecondary
         case .filled:
-            return isSelected ? .white : FluxColors.textSecondary
+            return isSelected ? FluxColors.onPrimary : FluxColors.textSecondary
         case .pill:
-            return isSelected ? .white : FluxColors.textSecondary
+            return isSelected ? FluxColors.onPrimary : FluxColors.textSecondary
         }
     }
 

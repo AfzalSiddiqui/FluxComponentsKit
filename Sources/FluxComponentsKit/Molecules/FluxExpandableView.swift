@@ -6,14 +6,14 @@ import FluxTokensKit
 @MainActor
 public class FluxExpandableViewModel: ObservableObject {
     @Published public var title: String
-    @Published public var icon: String?
+    @Published public var icon: FluxIcon.Source?
     @Published public var isExpanded: Bool
     @Published public var style: FluxExpandableView<EmptyView>.Style
     public var onToggle: ((Bool) -> Void)?
 
     public init(
         title: String,
-        icon: String? = nil,
+        icon: FluxIcon.Source? = nil,
         isExpanded: Bool = false,
         style: FluxExpandableView<EmptyView>.Style = .card,
         onToggle: ((Bool) -> Void)? = nil
@@ -64,7 +64,7 @@ public struct FluxExpandableView<Content: View>: View {
         .clipShape(RoundedRectangle(cornerRadius: cornerRadius))
         .overlay(
             RoundedRectangle(cornerRadius: cornerRadius)
-                .stroke(borderColor, lineWidth: viewModel.style == .bordered ? 1 : 0)
+                .stroke(borderColor, lineWidth: viewModel.style == .bordered ? FluxBorder.thin : 0)
         )
         .fluxShadow(viewModel.style == .card ? .small : FluxShadow(color: .clear, radius: 0, x: 0, y: 0))
         .animation(.easeInOut(duration: 0.3), value: viewModel.isExpanded)
@@ -77,7 +77,7 @@ public struct FluxExpandableView<Content: View>: View {
         } label: {
             HStack(spacing: FluxSpacing.sm) {
                 if let icon = viewModel.icon {
-                    FluxIcon(icon, size: .small, color: FluxColors.primary)
+                    FluxIcon(source: icon, size: .small, color: FluxColors.primary)
                 }
 
                 FluxText(viewModel.title, style: .headline)

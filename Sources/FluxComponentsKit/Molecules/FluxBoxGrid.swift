@@ -4,11 +4,11 @@ import FluxTokensKit
 // MARK: - Item
 
 public struct FluxBoxGridItem {
-    public let icon: String
+    public let icon: FluxIcon.Source
     public let label: String
     public let color: Color
 
-    public init(icon: String, label: String, color: Color = FluxColors.primary) {
+    public init(icon: FluxIcon.Source, label: String, color: Color = FluxColors.primary) {
         self.icon = icon
         self.label = label
         self.color = color
@@ -105,15 +105,15 @@ public struct FluxBoxGrid: View {
         } label: {
             VStack(spacing: FluxSpacing.xs) {
                 FluxIcon(
-                    item.icon,
+                    source: item.icon,
                     size: viewModel.itemSize.iconSize,
-                    color: isSelected ? .white : item.color
+                    color: isSelected ? FluxColors.onPrimary : item.color
                 )
 
                 FluxText(
                     item.label,
                     style: viewModel.itemSize.textStyle,
-                    color: isSelected ? .white : FluxColors.textPrimary
+                    color: isSelected ? FluxColors.onPrimary : FluxColors.textPrimary
                 )
                 .lineLimit(1)
             }
@@ -123,7 +123,7 @@ public struct FluxBoxGrid: View {
             .clipShape(RoundedRectangle(cornerRadius: FluxRadius.md))
             .overlay(
                 RoundedRectangle(cornerRadius: FluxRadius.md)
-                    .stroke(isSelected ? FluxColors.primary : FluxColors.border.opacity(0.5), lineWidth: 1)
+                    .stroke(isSelected ? FluxColors.primary : FluxColors.border.opacity(FluxOpacity.disabled), lineWidth: 1)
             )
         }
         .buttonStyle(.plain)

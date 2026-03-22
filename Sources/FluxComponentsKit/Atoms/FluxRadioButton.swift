@@ -76,7 +76,7 @@ public struct FluxRadioButton: View {
         } label: {
             HStack(spacing: FluxSpacing.sm) {
                 Circle()
-                    .stroke(viewModel.isSelected ? viewModel.color : FluxColors.border, lineWidth: 2)
+                    .stroke(viewModel.isSelected ? viewModel.color : FluxColors.border, lineWidth: FluxBorder.thick)
                     .frame(width: viewModel.size.circleSize, height: viewModel.size.circleSize)
                     .overlay(
                         Circle()

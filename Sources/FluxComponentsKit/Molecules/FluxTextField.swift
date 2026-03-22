@@ -57,7 +57,7 @@ public struct FluxTextField: View {
             .clipShape(RoundedRectangle(cornerRadius: FluxRadius.sm))
             .overlay(
                 RoundedRectangle(cornerRadius: FluxRadius.sm)
-                    .stroke(borderColor, lineWidth: 1.5)
+                    .stroke(borderColor, lineWidth: FluxBorder.medium)
             )
             .focused($isFocused)
 

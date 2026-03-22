@@ -5,7 +5,7 @@ import FluxTokensKit
 
 @MainActor
 public class FluxListRowViewModel: ObservableObject {
-    @Published public var icon: String?
+    @Published public var icon: FluxIcon.Source?
     @Published public var iconColor: Color
     @Published public var title: String
     @Published public var subtitle: String?
@@ -13,7 +13,7 @@ public class FluxListRowViewModel: ObservableObject {
     public var action: (() -> Void)?
 
     public init(
-        icon: String? = nil,
+        icon: FluxIcon.Source? = nil,
         iconColor: Color = FluxColors.primary,
         title: String,
         subtitle: String? = nil,
@@ -42,7 +42,7 @@ public struct FluxListRow: View {
     public var body: some View {
         let content = HStack(spacing: FluxSpacing.sm) {
             if let icon = viewModel.icon {
-                FluxIcon(viewModel: FluxIconViewModel(systemName: icon, size: .medium, color: viewModel.iconColor))
+                FluxIcon(viewModel: FluxIconViewModel(source: icon, size: .medium, color: viewModel.iconColor))
             }
 
             VStack(alignment: .leading, spacing: FluxSpacing.xxxs) {

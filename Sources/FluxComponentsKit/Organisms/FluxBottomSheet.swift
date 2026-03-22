@@ -65,7 +65,7 @@ public struct FluxBottomSheet<Content: View>: View {
     public var body: some View {
         ZStack(alignment: .bottom) {
             if viewModel.isPresented {
-                Color.black.opacity(0.4)
+                FluxColors.overlay
                     .ignoresSafeArea()
                     .onTapGesture { dismiss() }
                     .transition(.opacity)

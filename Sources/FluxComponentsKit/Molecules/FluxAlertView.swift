@@ -8,7 +8,7 @@ public class FluxAlertViewViewModel: ObservableObject {
     @Published public var variant: FluxAlertView.Variant
     @Published public var title: String
     @Published public var message: String
-    @Published public var icon: String?
+    @Published public var icon: FluxIcon.Source?
     @Published public var isDismissible: Bool
     @Published public var isVisible: Bool
     public var onDismiss: (() -> Void)?
@@ -17,7 +17,7 @@ public class FluxAlertViewViewModel: ObservableObject {
         variant: FluxAlertView.Variant = .info,
         title: String,
         message: String,
-        icon: String? = nil,
+        icon: FluxIcon.Source? = nil,
         isDismissible: Bool = true,
         isVisible: Bool = true,
         onDismiss: (() -> Void)? = nil
@@ -42,12 +42,12 @@ public struct FluxAlertView: View {
         case warning
         case error
 
-        var defaultIcon: String {
+        var defaultIcon: FluxIcon.Source {
             switch self {
-            case .info: return "info.circle.fill"
-            case .success: return "checkmark.circle.fill"
-            case .warning: return "exclamationmark.triangle.fill"
-            case .error: return "xmark.circle.fill"
+            case .info: return .system("info.circle.fill")
+            case .success: return .system("checkmark.circle.fill")
+            case .warning: return .system("exclamationmark.triangle.fill")
+            case .error: return .system("xmark.circle.fill")
             }
         }
 
@@ -62,10 +62,10 @@ public struct FluxAlertView: View {
 
         var backgroundColor: Color {
             switch self {
-            case .info: return FluxColors.primary.opacity(0.1)
-            case .success: return FluxColors.success.opacity(0.1)
-            case .warning: return FluxColors.warning.opacity(0.1)
-            case .error: return FluxColors.error.opacity(0.1)
+            case .info: return FluxColors.primary.opacity(FluxOpacity.light)
+            case .success: return FluxColors.success.opacity(FluxOpacity.light)
+            case .warning: return FluxColors.warning.opacity(FluxOpacity.light)
+            case .error: return FluxColors.error.opacity(FluxOpacity.light)
             }
         }
     }
@@ -80,7 +80,7 @@ public struct FluxAlertView: View {
         if viewModel.isVisible {
             HStack(alignment: .top, spacing: FluxSpacing.sm) {
                 FluxIcon(
-                    viewModel.icon ?? viewModel.variant.defaultIcon,
+                    source: viewModel.icon ?? viewModel.variant.defaultIcon,
                     size: .large,
                     color: viewModel.variant.color
                 )

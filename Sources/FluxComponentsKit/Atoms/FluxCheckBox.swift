@@ -96,7 +96,7 @@ public struct FluxCheckBox: View {
                     .frame(width: viewModel.size.boxSize, height: viewModel.size.boxSize)
                     .overlay(
                         RoundedRectangle(cornerRadius: viewModel.size.cornerRadius)
-                            .stroke(boxBorderColor, lineWidth: viewModel.style == .outlined ? 2 : 0)
+                            .stroke(boxBorderColor, lineWidth: viewModel.style == .outlined ? FluxBorder.thick : 0)
                     )
                     .overlay(
                         FluxIcon("checkmark", size: .custom(viewModel.size.checkmarkSize), color: checkmarkColor)
@@ -119,7 +119,7 @@ public struct FluxCheckBox: View {
     private var boxFillColor: Color {
         switch viewModel.style {
         case .filled:
-            return viewModel.isChecked ? viewModel.color : FluxColors.border.opacity(0.3)
+            return viewModel.isChecked ? viewModel.color : FluxColors.border.opacity(FluxOpacity.muted)
         case .outlined:
             return Color.clear
         }
@@ -137,7 +137,7 @@ public struct FluxCheckBox: View {
     private var checkmarkColor: Color {
         switch viewModel.style {
         case .filled:
-            return .white
+            return FluxColors.onPrimary
         case .outlined:
             return viewModel.color
         }

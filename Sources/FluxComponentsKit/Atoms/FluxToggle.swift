@@ -87,7 +87,7 @@ public struct FluxToggle: View {
             .controlSize(viewModel.size.controlSize)
         }
         .disabled(viewModel.isDisabled)
-        .opacity(viewModel.isDisabled ? 0.5 : 1.0)
+        .opacity(viewModel.isDisabled ? FluxOpacity.disabled : 1.0)
         .accessibilityLabel(viewModel.label)
         .accessibilityAddTraits(.isButton)
     }

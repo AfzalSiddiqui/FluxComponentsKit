@@ -5,14 +5,14 @@ import FluxTokensKit
 
 @MainActor
 public class FluxInfoViewModel: ObservableObject {
-    @Published public var icon: String
+    @Published public var icon: FluxIcon.Source
     @Published public var iconColor: Color
     @Published public var title: String
     @Published public var description: String
     @Published public var alignment: FluxInfoView.Alignment
 
     public init(
-        icon: String,
+        icon: FluxIcon.Source,
         iconColor: Color = FluxColors.primary,
         title: String,
         description: String,
@@ -59,7 +59,7 @@ public struct FluxInfoView: View {
 
     private var horizontalLayout: some View {
         HStack(spacing: FluxSpacing.sm) {
-            FluxIcon(viewModel.icon, size: .large, color: viewModel.iconColor)
+            FluxIcon(source: viewModel.icon, size: .large, color: viewModel.iconColor)
             VStack(alignment: .leading, spacing: FluxSpacing.xxxs) {
                 FluxText(viewModel.title, style: .headline)
                 FluxText(viewModel.description, style: .footnote)
@@ -70,7 +70,7 @@ public struct FluxInfoView: View {
 
     private var verticalLayout: some View {
         VStack(spacing: FluxSpacing.xs) {
-            FluxIcon(viewModel.icon, size: .large, color: viewModel.iconColor)
+            FluxIcon(source: viewModel.icon, size: .large, color: viewModel.iconColor)
             FluxText(viewModel.title, style: .headline)
                 .multilineTextAlignment(.center)
             FluxText(viewModel.description, style: .footnote)

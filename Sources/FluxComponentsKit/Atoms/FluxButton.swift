@@ -103,7 +103,7 @@ public struct FluxButton: View {
             .clipShape(RoundedRectangle(cornerRadius: viewModel.size.cornerRadius))
             .overlay(
                 RoundedRectangle(cornerRadius: viewModel.size.cornerRadius)
-                    .stroke(borderColor, lineWidth: viewModel.variant == .secondary ? 1.5 : 0)
+                    .stroke(borderColor, lineWidth: viewModel.variant == .secondary ? FluxBorder.medium : 0)
             )
         }
         .disabled(viewModel.isLoading || viewModel.isDisabled)
@@ -122,9 +122,9 @@ public struct FluxButton: View {
 
     private var foregroundColor: Color {
         switch viewModel.variant {
-        case .primary: return .white
+        case .primary: return FluxColors.onPrimary
         case .secondary: return FluxColors.primary
-        case .destructive: return .white
+        case .destructive: return FluxColors.onError
         }
     }
 

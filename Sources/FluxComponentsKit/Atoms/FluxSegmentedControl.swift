@@ -94,7 +94,7 @@ public struct FluxSegmentedControl: View {
         .clipShape(RoundedRectangle(cornerRadius: FluxRadius.md))
         .overlay(
             RoundedRectangle(cornerRadius: FluxRadius.md)
-                .stroke(viewModel.style == .outlined ? FluxColors.border : Color.clear, lineWidth: 1)
+                .stroke(viewModel.style == .outlined ? FluxColors.border : Color.clear, lineWidth: FluxBorder.thin)
         )
         .disabled(viewModel.isDisabled)
         .opacity(viewModel.isDisabled ? 0.5 : 1.0)
@@ -106,7 +106,7 @@ public struct FluxSegmentedControl: View {
         let isSelected = index == viewModel.selectedIndex
         switch viewModel.style {
         case .filled:
-            return isSelected ? .white : FluxColors.textPrimary
+            return isSelected ? FluxColors.onPrimary : FluxColors.textPrimary
         case .outlined:
             return isSelected ? FluxColors.primary : FluxColors.textSecondary
         }
@@ -118,7 +118,7 @@ public struct FluxSegmentedControl: View {
         case .filled:
             return isSelected ? FluxColors.primary : Color.clear
         case .outlined:
-            return isSelected ? FluxColors.primary.opacity(0.1) : Color.clear
+            return isSelected ? FluxColors.primary.opacity(FluxOpacity.light) : Color.clear
         }
     }
 
