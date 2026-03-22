@@ -40,9 +40,7 @@ public struct FluxTextField: View {
 
     public var body: some View {
         VStack(alignment: .leading, spacing: FluxSpacing.xs) {
-            Text(viewModel.label)
-                .font(FluxFont.caption)
-                .foregroundStyle(FluxColors.textSecondary)
+            FluxText(viewModel.label, style: .caption)
 
             Group {
                 if viewModel.isSecure {
@@ -64,9 +62,7 @@ public struct FluxTextField: View {
             .focused($isFocused)
 
             if let errorMessage = viewModel.errorMessage, !errorMessage.isEmpty {
-                Text(errorMessage)
-                    .font(FluxFont.caption)
-                    .foregroundStyle(FluxColors.error)
+                FluxText(errorMessage, style: .caption, color: FluxColors.error)
             }
         }
         .accessibilityElement(children: .combine)

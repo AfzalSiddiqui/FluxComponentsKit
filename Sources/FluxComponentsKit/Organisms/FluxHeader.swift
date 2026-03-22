@@ -40,13 +40,9 @@ public struct FluxHeader<LeadingAction: View, TrailingAction: View>: View {
             leadingAction
 
             VStack(spacing: FluxSpacing.xxxs) {
-                Text(viewModel.title)
-                    .font(FluxFont.title2)
-                    .foregroundStyle(FluxColors.textPrimary)
+                FluxText(viewModel.title, style: .title2)
                 if let subtitle = viewModel.subtitle {
-                    Text(subtitle)
-                        .font(FluxFont.subheadline)
-                        .foregroundStyle(FluxColors.textSecondary)
+                    FluxText(subtitle, style: .subheadline)
                 }
             }
             .frame(maxWidth: .infinity)

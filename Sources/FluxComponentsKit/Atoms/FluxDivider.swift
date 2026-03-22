@@ -7,13 +7,19 @@ import FluxTokensKit
 public class FluxDividerViewModel: ObservableObject {
     @Published public var axis: FluxDivider.Axis
     @Published public var color: Color
+    @Published public var thickness: CGFloat
+    @Published public var cornerRadius: CGFloat
 
     public init(
         axis: FluxDivider.Axis = .horizontal,
-        color: Color = FluxColors.divider
+        color: Color = FluxColors.divider,
+        thickness: CGFloat = 1,
+        cornerRadius: CGFloat = 0
     ) {
         self.axis = axis
         self.color = color
+        self.thickness = thickness
+        self.cornerRadius = cornerRadius
     }
 }
 
@@ -35,15 +41,15 @@ public struct FluxDivider: View {
     public var body: some View {
         switch viewModel.axis {
         case .horizontal:
-            Rectangle()
+            RoundedRectangle(cornerRadius: viewModel.cornerRadius)
                 .fill(viewModel.color)
-                .frame(height: 1)
+                .frame(height: viewModel.thickness)
                 .frame(maxWidth: .infinity)
                 .accessibilityHidden(true)
         case .vertical:
-            Rectangle()
+            RoundedRectangle(cornerRadius: viewModel.cornerRadius)
                 .fill(viewModel.color)
-                .frame(width: 1)
+                .frame(width: viewModel.thickness)
                 .frame(maxHeight: .infinity)
                 .accessibilityHidden(true)
         }

@@ -27,6 +27,10 @@
         },
         {
           "kind" : "file",
+          "name" : "/Users/mac/Desktop/GithubProject/FluxDesignComponent/FluxComponentsKit/Sources/FluxComponentsKit/Atoms/FluxCheckBox.swift"
+        },
+        {
+          "kind" : "file",
           "name" : "/Users/mac/Desktop/GithubProject/FluxDesignComponent/FluxComponentsKit/Sources/FluxComponentsKit/Atoms/FluxDivider.swift"
         },
         {
@@ -35,7 +39,19 @@
         },
         {
           "kind" : "file",
+          "name" : "/Users/mac/Desktop/GithubProject/FluxDesignComponent/FluxComponentsKit/Sources/FluxComponentsKit/Atoms/FluxImage.swift"
+        },
+        {
+          "kind" : "file",
           "name" : "/Users/mac/Desktop/GithubProject/FluxDesignComponent/FluxComponentsKit/Sources/FluxComponentsKit/Atoms/FluxLoader.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/mac/Desktop/GithubProject/FluxDesignComponent/FluxComponentsKit/Sources/FluxComponentsKit/Atoms/FluxRadioButton.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/mac/Desktop/GithubProject/FluxDesignComponent/FluxComponentsKit/Sources/FluxComponentsKit/Atoms/FluxSegmentedControl.swift"
         },
         {
           "kind" : "file",
@@ -43,7 +59,19 @@
         },
         {
           "kind" : "file",
+          "name" : "/Users/mac/Desktop/GithubProject/FluxDesignComponent/FluxComponentsKit/Sources/FluxComponentsKit/Atoms/FluxToggle.swift"
+        },
+        {
+          "kind" : "file",
           "name" : "/Users/mac/Desktop/GithubProject/FluxDesignComponent/FluxComponentsKit/Sources/FluxComponentsKit/FluxComponentsKit.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/mac/Desktop/GithubProject/FluxDesignComponent/FluxComponentsKit/Sources/FluxComponentsKit/Molecules/FluxAlertView.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/mac/Desktop/GithubProject/FluxDesignComponent/FluxComponentsKit/Sources/FluxComponentsKit/Molecules/FluxBoxGrid.swift"
         },
         {
           "kind" : "file",
@@ -51,7 +79,27 @@
         },
         {
           "kind" : "file",
+          "name" : "/Users/mac/Desktop/GithubProject/FluxDesignComponent/FluxComponentsKit/Sources/FluxComponentsKit/Molecules/FluxCardFlap.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/mac/Desktop/GithubProject/FluxDesignComponent/FluxComponentsKit/Sources/FluxComponentsKit/Molecules/FluxExpandableView.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/mac/Desktop/GithubProject/FluxDesignComponent/FluxComponentsKit/Sources/FluxComponentsKit/Molecules/FluxFlapView.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/mac/Desktop/GithubProject/FluxDesignComponent/FluxComponentsKit/Sources/FluxComponentsKit/Molecules/FluxInfoView.swift"
+        },
+        {
+          "kind" : "file",
           "name" : "/Users/mac/Desktop/GithubProject/FluxDesignComponent/FluxComponentsKit/Sources/FluxComponentsKit/Molecules/FluxListRow.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/mac/Desktop/GithubProject/FluxDesignComponent/FluxComponentsKit/Sources/FluxComponentsKit/Molecules/FluxOptionCard.swift"
         },
         {
           "kind" : "file",
@@ -59,11 +107,23 @@
         },
         {
           "kind" : "file",
+          "name" : "/Users/mac/Desktop/GithubProject/FluxDesignComponent/FluxComponentsKit/Sources/FluxComponentsKit/Organisms/FluxBottomSheet.swift"
+        },
+        {
+          "kind" : "file",
           "name" : "/Users/mac/Desktop/GithubProject/FluxDesignComponent/FluxComponentsKit/Sources/FluxComponentsKit/Organisms/FluxFormSection.swift"
         },
         {
           "kind" : "file",
+          "name" : "/Users/mac/Desktop/GithubProject/FluxDesignComponent/FluxComponentsKit/Sources/FluxComponentsKit/Organisms/FluxGraph.swift"
+        },
+        {
+          "kind" : "file",
           "name" : "/Users/mac/Desktop/GithubProject/FluxDesignComponent/FluxComponentsKit/Sources/FluxComponentsKit/Organisms/FluxHeader.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/mac/Desktop/GithubProject/FluxDesignComponent/FluxComponentsKit/Sources/FluxComponentsKit/Organisms/FluxWebView.swift"
         },
         {
           "kind" : "file",
@@ -75,16 +135,31 @@
       "moduleOutputPath" : "/Users/mac/Desktop/GithubProject/FluxDesignComponent/FluxComponentsKit/.build/arm64-apple-macosx/debug/FluxComponentsKit.swiftmodule",
       "objects" : [
         "/Users/mac/Desktop/GithubProject/FluxDesignComponent/FluxComponentsKit/.build/arm64-apple-macosx/debug/FluxComponentsKit.build/Atoms/FluxButton.swift.o",
+        "/Users/mac/Desktop/GithubProject/FluxDesignComponent/FluxComponentsKit/.build/arm64-apple-macosx/debug/FluxComponentsKit.build/Atoms/FluxCheckBox.swift.o",
         "/Users/mac/Desktop/GithubProject/FluxDesignComponent/FluxComponentsKit/.build/arm64-apple-macosx/debug/FluxComponentsKit.build/Atoms/FluxDivider.swift.o",
         "/Users/mac/Desktop/GithubProject/FluxDesignComponent/FluxComponentsKit/.build/arm64-apple-macosx/debug/FluxComponentsKit.build/Atoms/FluxIcon.swift.o",
+        "/Users/mac/Desktop/GithubProject/FluxDesignComponent/FluxComponentsKit/.build/arm64-apple-macosx/debug/FluxComponentsKit.build/Atoms/FluxImage.swift.o",
         "/Users/mac/Desktop/GithubProject/FluxDesignComponent/FluxComponentsKit/.build/arm64-apple-macosx/debug/FluxComponentsKit.build/Atoms/FluxLoader.swift.o",
+        "/Users/mac/Desktop/GithubProject/FluxDesignComponent/FluxComponentsKit/.build/arm64-apple-macosx/debug/FluxComponentsKit.build/Atoms/FluxRadioButton.swift.o",
+        "/Users/mac/Desktop/GithubProject/FluxDesignComponent/FluxComponentsKit/.build/arm64-apple-macosx/debug/FluxComponentsKit.build/Atoms/FluxSegmentedControl.swift.o",
         "/Users/mac/Desktop/GithubProject/FluxDesignComponent/FluxComponentsKit/.build/arm64-apple-macosx/debug/FluxComponentsKit.build/Atoms/FluxText.swift.o",
+        "/Users/mac/Desktop/GithubProject/FluxDesignComponent/FluxComponentsKit/.build/arm64-apple-macosx/debug/FluxComponentsKit.build/Atoms/FluxToggle.swift.o",
         "/Users/mac/Desktop/GithubProject/FluxDesignComponent/FluxComponentsKit/.build/arm64-apple-macosx/debug/FluxComponentsKit.build/FluxComponentsKit.swift.o",
+        "/Users/mac/Desktop/GithubProject/FluxDesignComponent/FluxComponentsKit/.build/arm64-apple-macosx/debug/FluxComponentsKit.build/Molecules/FluxAlertView.swift.o",
+        "/Users/mac/Desktop/GithubProject/FluxDesignComponent/FluxComponentsKit/.build/arm64-apple-macosx/debug/FluxComponentsKit.build/Molecules/FluxBoxGrid.swift.o",
         "/Users/mac/Desktop/GithubProject/FluxDesignComponent/FluxComponentsKit/.build/arm64-apple-macosx/debug/FluxComponentsKit.build/Molecules/FluxCard.swift.o",
+        "/Users/mac/Desktop/GithubProject/FluxDesignComponent/FluxComponentsKit/.build/arm64-apple-macosx/debug/FluxComponentsKit.build/Molecules/FluxCardFlap.swift.o",
+        "/Users/mac/Desktop/GithubProject/FluxDesignComponent/FluxComponentsKit/.build/arm64-apple-macosx/debug/FluxComponentsKit.build/Molecules/FluxExpandableView.swift.o",
+        "/Users/mac/Desktop/GithubProject/FluxDesignComponent/FluxComponentsKit/.build/arm64-apple-macosx/debug/FluxComponentsKit.build/Molecules/FluxFlapView.swift.o",
+        "/Users/mac/Desktop/GithubProject/FluxDesignComponent/FluxComponentsKit/.build/arm64-apple-macosx/debug/FluxComponentsKit.build/Molecules/FluxInfoView.swift.o",
         "/Users/mac/Desktop/GithubProject/FluxDesignComponent/FluxComponentsKit/.build/arm64-apple-macosx/debug/FluxComponentsKit.build/Molecules/FluxListRow.swift.o",
+        "/Users/mac/Desktop/GithubProject/FluxDesignComponent/FluxComponentsKit/.build/arm64-apple-macosx/debug/FluxComponentsKit.build/Molecules/FluxOptionCard.swift.o",
         "/Users/mac/Desktop/GithubProject/FluxDesignComponent/FluxComponentsKit/.build/arm64-apple-macosx/debug/FluxComponentsKit.build/Molecules/FluxTextField.swift.o",
+        "/Users/mac/Desktop/GithubProject/FluxDesignComponent/FluxComponentsKit/.build/arm64-apple-macosx/debug/FluxComponentsKit.build/Organisms/FluxBottomSheet.swift.o",
         "/Users/mac/Desktop/GithubProject/FluxDesignComponent/FluxComponentsKit/.build/arm64-apple-macosx/debug/FluxComponentsKit.build/Organisms/FluxFormSection.swift.o",
-        "/Users/mac/Desktop/GithubProject/FluxDesignComponent/FluxComponentsKit/.build/arm64-apple-macosx/debug/FluxComponentsKit.build/Organisms/FluxHeader.swift.o"
+        "/Users/mac/Desktop/GithubProject/FluxDesignComponent/FluxComponentsKit/.build/arm64-apple-macosx/debug/FluxComponentsKit.build/Organisms/FluxGraph.swift.o",
+        "/Users/mac/Desktop/GithubProject/FluxDesignComponent/FluxComponentsKit/.build/arm64-apple-macosx/debug/FluxComponentsKit.build/Organisms/FluxHeader.swift.o",
+        "/Users/mac/Desktop/GithubProject/FluxDesignComponent/FluxComponentsKit/.build/arm64-apple-macosx/debug/FluxComponentsKit.build/Organisms/FluxWebView.swift.o"
       ],
       "otherArguments" : [
         "-target",
@@ -123,6 +198,10 @@
         },
         {
           "kind" : "file",
+          "name" : "/Users/mac/Desktop/GithubProject/FluxDesignComponent/FluxComponentsKit/.build/arm64-apple-macosx/debug/FluxComponentsKit.build/Atoms/FluxCheckBox.swift.o"
+        },
+        {
+          "kind" : "file",
           "name" : "/Users/mac/Desktop/GithubProject/FluxDesignComponent/FluxComponentsKit/.build/arm64-apple-macosx/debug/FluxComponentsKit.build/Atoms/FluxDivider.swift.o"
         },
         {
@@ -131,7 +210,19 @@
         },
         {
           "kind" : "file",
+          "name" : "/Users/mac/Desktop/GithubProject/FluxDesignComponent/FluxComponentsKit/.build/arm64-apple-macosx/debug/FluxComponentsKit.build/Atoms/FluxImage.swift.o"
+        },
+        {
+          "kind" : "file",
           "name" : "/Users/mac/Desktop/GithubProject/FluxDesignComponent/FluxComponentsKit/.build/arm64-apple-macosx/debug/FluxComponentsKit.build/Atoms/FluxLoader.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/mac/Desktop/GithubProject/FluxDesignComponent/FluxComponentsKit/.build/arm64-apple-macosx/debug/FluxComponentsKit.build/Atoms/FluxRadioButton.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/mac/Desktop/GithubProject/FluxDesignComponent/FluxComponentsKit/.build/arm64-apple-macosx/debug/FluxComponentsKit.build/Atoms/FluxSegmentedControl.swift.o"
         },
         {
           "kind" : "file",
@@ -139,7 +230,19 @@
         },
         {
           "kind" : "file",
+          "name" : "/Users/mac/Desktop/GithubProject/FluxDesignComponent/FluxComponentsKit/.build/arm64-apple-macosx/debug/FluxComponentsKit.build/Atoms/FluxToggle.swift.o"
+        },
+        {
+          "kind" : "file",
           "name" : "/Users/mac/Desktop/GithubProject/FluxDesignComponent/FluxComponentsKit/.build/arm64-apple-macosx/debug/FluxComponentsKit.build/FluxComponentsKit.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/mac/Desktop/GithubProject/FluxDesignComponent/FluxComponentsKit/.build/arm64-apple-macosx/debug/FluxComponentsKit.build/Molecules/FluxAlertView.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/mac/Desktop/GithubProject/FluxDesignComponent/FluxComponentsKit/.build/arm64-apple-macosx/debug/FluxComponentsKit.build/Molecules/FluxBoxGrid.swift.o"
         },
         {
           "kind" : "file",
@@ -147,7 +250,27 @@
         },
         {
           "kind" : "file",
+          "name" : "/Users/mac/Desktop/GithubProject/FluxDesignComponent/FluxComponentsKit/.build/arm64-apple-macosx/debug/FluxComponentsKit.build/Molecules/FluxCardFlap.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/mac/Desktop/GithubProject/FluxDesignComponent/FluxComponentsKit/.build/arm64-apple-macosx/debug/FluxComponentsKit.build/Molecules/FluxExpandableView.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/mac/Desktop/GithubProject/FluxDesignComponent/FluxComponentsKit/.build/arm64-apple-macosx/debug/FluxComponentsKit.build/Molecules/FluxFlapView.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/mac/Desktop/GithubProject/FluxDesignComponent/FluxComponentsKit/.build/arm64-apple-macosx/debug/FluxComponentsKit.build/Molecules/FluxInfoView.swift.o"
+        },
+        {
+          "kind" : "file",
           "name" : "/Users/mac/Desktop/GithubProject/FluxDesignComponent/FluxComponentsKit/.build/arm64-apple-macosx/debug/FluxComponentsKit.build/Molecules/FluxListRow.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/mac/Desktop/GithubProject/FluxDesignComponent/FluxComponentsKit/.build/arm64-apple-macosx/debug/FluxComponentsKit.build/Molecules/FluxOptionCard.swift.o"
         },
         {
           "kind" : "file",
@@ -155,11 +278,23 @@
         },
         {
           "kind" : "file",
+          "name" : "/Users/mac/Desktop/GithubProject/FluxDesignComponent/FluxComponentsKit/.build/arm64-apple-macosx/debug/FluxComponentsKit.build/Organisms/FluxBottomSheet.swift.o"
+        },
+        {
+          "kind" : "file",
           "name" : "/Users/mac/Desktop/GithubProject/FluxDesignComponent/FluxComponentsKit/.build/arm64-apple-macosx/debug/FluxComponentsKit.build/Organisms/FluxFormSection.swift.o"
         },
         {
           "kind" : "file",
+          "name" : "/Users/mac/Desktop/GithubProject/FluxDesignComponent/FluxComponentsKit/.build/arm64-apple-macosx/debug/FluxComponentsKit.build/Organisms/FluxGraph.swift.o"
+        },
+        {
+          "kind" : "file",
           "name" : "/Users/mac/Desktop/GithubProject/FluxDesignComponent/FluxComponentsKit/.build/arm64-apple-macosx/debug/FluxComponentsKit.build/Organisms/FluxHeader.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/mac/Desktop/GithubProject/FluxDesignComponent/FluxComponentsKit/.build/arm64-apple-macosx/debug/FluxComponentsKit.build/Organisms/FluxWebView.swift.o"
         },
         {
           "kind" : "file",
@@ -168,16 +303,31 @@
       ],
       "sources" : [
         "/Users/mac/Desktop/GithubProject/FluxDesignComponent/FluxComponentsKit/Sources/FluxComponentsKit/Atoms/FluxButton.swift",
+        "/Users/mac/Desktop/GithubProject/FluxDesignComponent/FluxComponentsKit/Sources/FluxComponentsKit/Atoms/FluxCheckBox.swift",
         "/Users/mac/Desktop/GithubProject/FluxDesignComponent/FluxComponentsKit/Sources/FluxComponentsKit/Atoms/FluxDivider.swift",
         "/Users/mac/Desktop/GithubProject/FluxDesignComponent/FluxComponentsKit/Sources/FluxComponentsKit/Atoms/FluxIcon.swift",
+        "/Users/mac/Desktop/GithubProject/FluxDesignComponent/FluxComponentsKit/Sources/FluxComponentsKit/Atoms/FluxImage.swift",
         "/Users/mac/Desktop/GithubProject/FluxDesignComponent/FluxComponentsKit/Sources/FluxComponentsKit/Atoms/FluxLoader.swift",
+        "/Users/mac/Desktop/GithubProject/FluxDesignComponent/FluxComponentsKit/Sources/FluxComponentsKit/Atoms/FluxRadioButton.swift",
+        "/Users/mac/Desktop/GithubProject/FluxDesignComponent/FluxComponentsKit/Sources/FluxComponentsKit/Atoms/FluxSegmentedControl.swift",
         "/Users/mac/Desktop/GithubProject/FluxDesignComponent/FluxComponentsKit/Sources/FluxComponentsKit/Atoms/FluxText.swift",
+        "/Users/mac/Desktop/GithubProject/FluxDesignComponent/FluxComponentsKit/Sources/FluxComponentsKit/Atoms/FluxToggle.swift",
         "/Users/mac/Desktop/GithubProject/FluxDesignComponent/FluxComponentsKit/Sources/FluxComponentsKit/FluxComponentsKit.swift",
+        "/Users/mac/Desktop/GithubProject/FluxDesignComponent/FluxComponentsKit/Sources/FluxComponentsKit/Molecules/FluxAlertView.swift",
+        "/Users/mac/Desktop/GithubProject/FluxDesignComponent/FluxComponentsKit/Sources/FluxComponentsKit/Molecules/FluxBoxGrid.swift",
         "/Users/mac/Desktop/GithubProject/FluxDesignComponent/FluxComponentsKit/Sources/FluxComponentsKit/Molecules/FluxCard.swift",
+        "/Users/mac/Desktop/GithubProject/FluxDesignComponent/FluxComponentsKit/Sources/FluxComponentsKit/Molecules/FluxCardFlap.swift",
+        "/Users/mac/Desktop/GithubProject/FluxDesignComponent/FluxComponentsKit/Sources/FluxComponentsKit/Molecules/FluxExpandableView.swift",
+        "/Users/mac/Desktop/GithubProject/FluxDesignComponent/FluxComponentsKit/Sources/FluxComponentsKit/Molecules/FluxFlapView.swift",
+        "/Users/mac/Desktop/GithubProject/FluxDesignComponent/FluxComponentsKit/Sources/FluxComponentsKit/Molecules/FluxInfoView.swift",
         "/Users/mac/Desktop/GithubProject/FluxDesignComponent/FluxComponentsKit/Sources/FluxComponentsKit/Molecules/FluxListRow.swift",
+        "/Users/mac/Desktop/GithubProject/FluxDesignComponent/FluxComponentsKit/Sources/FluxComponentsKit/Molecules/FluxOptionCard.swift",
         "/Users/mac/Desktop/GithubProject/FluxDesignComponent/FluxComponentsKit/Sources/FluxComponentsKit/Molecules/FluxTextField.swift",
+        "/Users/mac/Desktop/GithubProject/FluxDesignComponent/FluxComponentsKit/Sources/FluxComponentsKit/Organisms/FluxBottomSheet.swift",
         "/Users/mac/Desktop/GithubProject/FluxDesignComponent/FluxComponentsKit/Sources/FluxComponentsKit/Organisms/FluxFormSection.swift",
-        "/Users/mac/Desktop/GithubProject/FluxDesignComponent/FluxComponentsKit/Sources/FluxComponentsKit/Organisms/FluxHeader.swift"
+        "/Users/mac/Desktop/GithubProject/FluxDesignComponent/FluxComponentsKit/Sources/FluxComponentsKit/Organisms/FluxGraph.swift",
+        "/Users/mac/Desktop/GithubProject/FluxDesignComponent/FluxComponentsKit/Sources/FluxComponentsKit/Organisms/FluxHeader.swift",
+        "/Users/mac/Desktop/GithubProject/FluxDesignComponent/FluxComponentsKit/Sources/FluxComponentsKit/Organisms/FluxWebView.swift"
       ],
       "tempsPath" : "/Users/mac/Desktop/GithubProject/FluxDesignComponent/FluxComponentsKit/.build/arm64-apple-macosx/debug/FluxComponentsKit.build",
       "wholeModuleOptimization" : false
@@ -325,16 +475,31 @@
       "-incremental",
       "-c",
       "/Users/mac/Desktop/GithubProject/FluxDesignComponent/FluxComponentsKit/Sources/FluxComponentsKit/Atoms/FluxButton.swift",
+      "/Users/mac/Desktop/GithubProject/FluxDesignComponent/FluxComponentsKit/Sources/FluxComponentsKit/Atoms/FluxCheckBox.swift",
       "/Users/mac/Desktop/GithubProject/FluxDesignComponent/FluxComponentsKit/Sources/FluxComponentsKit/Atoms/FluxDivider.swift",
       "/Users/mac/Desktop/GithubProject/FluxDesignComponent/FluxComponentsKit/Sources/FluxComponentsKit/Atoms/FluxIcon.swift",
+      "/Users/mac/Desktop/GithubProject/FluxDesignComponent/FluxComponentsKit/Sources/FluxComponentsKit/Atoms/FluxImage.swift",
       "/Users/mac/Desktop/GithubProject/FluxDesignComponent/FluxComponentsKit/Sources/FluxComponentsKit/Atoms/FluxLoader.swift",
+      "/Users/mac/Desktop/GithubProject/FluxDesignComponent/FluxComponentsKit/Sources/FluxComponentsKit/Atoms/FluxRadioButton.swift",
+      "/Users/mac/Desktop/GithubProject/FluxDesignComponent/FluxComponentsKit/Sources/FluxComponentsKit/Atoms/FluxSegmentedControl.swift",
       "/Users/mac/Desktop/GithubProject/FluxDesignComponent/FluxComponentsKit/Sources/FluxComponentsKit/Atoms/FluxText.swift",
+      "/Users/mac/Desktop/GithubProject/FluxDesignComponent/FluxComponentsKit/Sources/FluxComponentsKit/Atoms/FluxToggle.swift",
       "/Users/mac/Desktop/GithubProject/FluxDesignComponent/FluxComponentsKit/Sources/FluxComponentsKit/FluxComponentsKit.swift",
+      "/Users/mac/Desktop/GithubProject/FluxDesignComponent/FluxComponentsKit/Sources/FluxComponentsKit/Molecules/FluxAlertView.swift",
+      "/Users/mac/Desktop/GithubProject/FluxDesignComponent/FluxComponentsKit/Sources/FluxComponentsKit/Molecules/FluxBoxGrid.swift",
       "/Users/mac/Desktop/GithubProject/FluxDesignComponent/FluxComponentsKit/Sources/FluxComponentsKit/Molecules/FluxCard.swift",
+      "/Users/mac/Desktop/GithubProject/FluxDesignComponent/FluxComponentsKit/Sources/FluxComponentsKit/Molecules/FluxCardFlap.swift",
+      "/Users/mac/Desktop/GithubProject/FluxDesignComponent/FluxComponentsKit/Sources/FluxComponentsKit/Molecules/FluxExpandableView.swift",
+      "/Users/mac/Desktop/GithubProject/FluxDesignComponent/FluxComponentsKit/Sources/FluxComponentsKit/Molecules/FluxFlapView.swift",
+      "/Users/mac/Desktop/GithubProject/FluxDesignComponent/FluxComponentsKit/Sources/FluxComponentsKit/Molecules/FluxInfoView.swift",
       "/Users/mac/Desktop/GithubProject/FluxDesignComponent/FluxComponentsKit/Sources/FluxComponentsKit/Molecules/FluxListRow.swift",
+      "/Users/mac/Desktop/GithubProject/FluxDesignComponent/FluxComponentsKit/Sources/FluxComponentsKit/Molecules/FluxOptionCard.swift",
       "/Users/mac/Desktop/GithubProject/FluxDesignComponent/FluxComponentsKit/Sources/FluxComponentsKit/Molecules/FluxTextField.swift",
+      "/Users/mac/Desktop/GithubProject/FluxDesignComponent/FluxComponentsKit/Sources/FluxComponentsKit/Organisms/FluxBottomSheet.swift",
       "/Users/mac/Desktop/GithubProject/FluxDesignComponent/FluxComponentsKit/Sources/FluxComponentsKit/Organisms/FluxFormSection.swift",
+      "/Users/mac/Desktop/GithubProject/FluxDesignComponent/FluxComponentsKit/Sources/FluxComponentsKit/Organisms/FluxGraph.swift",
       "/Users/mac/Desktop/GithubProject/FluxDesignComponent/FluxComponentsKit/Sources/FluxComponentsKit/Organisms/FluxHeader.swift",
+      "/Users/mac/Desktop/GithubProject/FluxDesignComponent/FluxComponentsKit/Sources/FluxComponentsKit/Organisms/FluxWebView.swift",
       "-I",
       "/Users/mac/Desktop/GithubProject/FluxDesignComponent/FluxComponentsKit/.build/arm64-apple-macosx/debug",
       "-target",

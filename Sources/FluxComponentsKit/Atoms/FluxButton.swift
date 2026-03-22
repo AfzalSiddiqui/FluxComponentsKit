@@ -92,7 +92,7 @@ public struct FluxButton: View {
                     ProgressView()
                         .tint(foregroundColor)
                 }
-                Text(viewModel.title)
+                FluxText(viewModel.title, style: .body)
                     .font(viewModel.size.font)
             }
             .frame(maxWidth: .infinity)

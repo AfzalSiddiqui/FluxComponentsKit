@@ -35,9 +35,7 @@ public struct FluxFormSection<Content: View>: View {
     public var body: some View {
         VStack(alignment: .leading, spacing: FluxSpacing.xs) {
             if let title = viewModel.title {
-                Text(title)
-                    .font(FluxFont.headline)
-                    .foregroundStyle(FluxColors.textPrimary)
+                FluxText(title, style: .headline)
                     .padding(.bottom, FluxSpacing.xs)
             }
             VStack(spacing: viewModel.spacing) {

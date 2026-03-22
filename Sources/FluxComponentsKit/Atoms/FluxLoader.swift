@@ -7,13 +7,26 @@ import FluxTokensKit
 public class FluxLoaderViewModel: ObservableObject {
     @Published public var size: FluxLoader.Size
     @Published public var tint: Color
+    @Published public var progress: Double?
 
+    /// Indeterminate spinner
     public init(
         size: FluxLoader.Size = .medium,
         tint: Color = FluxColors.primary
     ) {
         self.size = size
         self.tint = tint
+        self.progress = nil
+    }
+
+    /// Determinate progress bar (0.0 – 1.0)
+    public init(
+        progress: Double,
+        tint: Color = FluxColors.primary
+    ) {
+        self.size = .medium
+        self.tint = tint
+        self.progress = progress
     }
 }
 
@@ -50,10 +63,16 @@ public struct FluxLoader: View {
     }
 
     public var body: some View {
-        ProgressView()
-            .controlSize(viewModel.size.controlSize)
-            .scaleEffect(viewModel.size.scale)
-            .tint(viewModel.tint)
-            .accessibilityLabel("Loading")
+        if let progress = viewModel.progress {
+            ProgressView(value: progress)
+                .tint(viewModel.tint)
+                .accessibilityLabel("Loading \(Int(progress * 100))%")
+        } else {
+            ProgressView()
+                .controlSize(viewModel.size.controlSize)
+                .scaleEffect(viewModel.size.scale)
+                .tint(viewModel.tint)
+                .accessibilityLabel("Loading")
+        }
     }
 }

@@ -46,13 +46,9 @@ public struct FluxListRow: View {
             }
 
             VStack(alignment: .leading, spacing: FluxSpacing.xxxs) {
-                Text(viewModel.title)
-                    .font(FluxFont.body)
-                    .foregroundStyle(FluxColors.textPrimary)
+                FluxText(viewModel.title, style: .body)
                 if let subtitle = viewModel.subtitle {
-                    Text(subtitle)
-                        .font(FluxFont.caption)
-                        .foregroundStyle(FluxColors.textSecondary)
+                    FluxText(subtitle, style: .caption)
                 }
             }
 
