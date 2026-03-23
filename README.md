@@ -1,4 +1,4 @@
-# FluxComponentsKit
+# flux-ios-foundation
 Reusable components for fast, consistent, and adaptive SwiftUI development.
 
 Key Features:
